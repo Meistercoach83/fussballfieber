@@ -11,6 +11,9 @@ import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MyScrollServiceService } from '@shared/services/my-scroll-service.service';
+import { TranslatesService } from '@shared/translates';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -23,16 +26,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     SponsorenPreiseComponent,
   ],
   imports: [
-    AgmCoreModule,
+    AgmCoreModule.forRoot({ apiKey: 'AIzaSyApjtaFJJyp7UBipZ8Iks8fXRvNvt8uuto'}),
     AgmSnazzyInfoWindowModule,
     RouterModule,
     CommonModule,
-    ReactiveFormsModule
-    /*
-    CommonModule,
     ReactiveFormsModule,
-    RouterModule,
-    OwlModule*/
+    TranslateModule
   ],
   exports: [
     EventSozialesProjektComponent,
@@ -42,6 +41,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     SponsorenKontaktFormularComponent,
     SponsorenListeComponent,
     SponsorenPreiseComponent
+  ],
+  providers: [
+    MyScrollServiceService
   ]
 })
 export class SharedComponentsModule { }

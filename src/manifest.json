@@ -1,7 +1,7 @@
 {
-  "name": "application",
-  "short_name": "application",
-  "theme_color": "#f48c5b",
+  "name": "universal-demo",
+  "short_name": "universal-demo",
+  "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",

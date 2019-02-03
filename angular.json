@@ -1,15 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "defaultProject": "application",
   "newProjectRoot": "projects",
   "projects": {
-    "application": {
+    "universal-demo": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
-      "schematics": {},
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -17,12 +14,12 @@
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.browser.ts",
-            "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
+            "polyfills": "src/polyfills.ts",
             "assets": [
-              "src/robots.txt",
               "src/assets",
               "src/favicon.ico",
+              "src/robots.txt",
               "src/manifest.json"
             ],
             "styles": [
@@ -31,12 +28,12 @@
               "node_modules/font-awesome/css/font-awesome.css",
               "node_modules/owl.carousel/dist/assets/owl.carousel.css",
               "node_modules/owl.carousel/dist/assets/owl.theme.default.css",
-              "src/assets/styles/heebo.font.scss",
-              "src/assets/styles/app-loading.scss",
-              "src/assets/styles/app.scss",
-              "src/assets/styles/typography.css",
-              "src/assets/styles/main.css",
-              "src/assets/styles/grid.scss"
+              "src/assets/icons/flags/flags.css",
+              "src/styles/heebo.font.scss",
+              "src/styles/app.scss",
+              "src/styles/typography.scss",
+              "src/styles/main.scss",
+              "src/styles/grid.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -54,12 +51,6 @@
               ]
             },
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/browser/environment.prod.ts"
-                }
-              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -69,6 +60,12 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/browser/environment.prod.ts"
+                }
+              ],
               "serviceWorker": true
             }
           }
@@ -76,41 +73,37 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "application:build"
+            "browserTarget": "universal-demo:build"
           },
           "configurations": {
             "dev": {
-              "browserTarget": "application:build:dev"
-            },
-            "firebug": {
-              "browserTarget": "application:build:firebug"
+              "browserTarget": "universal-demo:build:dev"
             },
             "production": {
-              "browserTarget": "application:build:prod"
+              "browserTarget": "universal-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "application:build"
+            "browserTarget": "universal-demo:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
+            "karmaConfig": "./karma.conf.js",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
-            "karmaConfig": "./src/karma.conf.js",
-            "scripts": [
-            ],
+            "scripts": [],
             "styles": [
             ],
             "assets": [
-              "src/robots.txt",
               "src/assets",
               "src/favicon.ico",
+              "src/robots.txt",
               "src/manifest.json"
             ]
           }
@@ -137,7 +130,7 @@
           "configurations": {
             "dev": {
               "optimization": true,
-              "outputHashing": "none",
+              "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
               "extractLicenses": true,
@@ -151,7 +144,7 @@
             },
             "production": {
               "optimization": true,
-              "outputHashing": "none",
+              "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
               "extractLicenses": true,
@@ -167,21 +160,24 @@
         }
       }
     },
-    "application-e2e": {
-      "root": "e2e/",
+    "universal-demo-e2e": {
+      "root": "",
+      "sourceRoot": "",
       "projectType": "application",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "./e2e/protractor.conf.js",
-            "devServerTarget": "application:serve"
+            "protractorConfig": "./protractor.conf.js",
+            "devServerTarget": "universal-demo:serve"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
+            "tsConfig": [
+              "e2e/tsconfig.e2e.json"
+            ],
             "exclude": [
               "**/node_modules/**"
             ]
@@ -190,33 +186,14 @@
       }
     }
   },
-  "cli": {},
+  "defaultProject": "universal-demo",
   "schematics": {
-    "@schematics/angular:class": {
-      "spec": true
-    },
     "@schematics/angular:component": {
-      "spec": true,
-      "inlineStyle": false,
-      "inlineTemplate": false,
       "prefix": "app",
       "styleext": "scss"
     },
     "@schematics/angular:directive": {
-      "spec": true,
       "prefix": "app"
-    },
-    "@schematics/angular:guard": {
-      "spec": true
-    },
-    "@schematics/angular:module": {
-      "spec": true
-    },
-    "@schematics/angular:pipe": {
-      "spec": true
-    },
-    "@schematics/angular:service": {
-      "spec": true
     }
   }
 }

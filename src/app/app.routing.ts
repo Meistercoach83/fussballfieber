@@ -1,10 +1,27 @@
-import { Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { MetaGuard } from '@ngx-meta/core';
+// import { WrapperComponent } from '@shared/layouts/wrapper/wrapper.component';
 
-export const appRoutes: Routes = [
+const routes: Routes = [
   {
     path: '',
-    loadChildren: './page-layout/page-layout.module#PageLayoutModule',
+    loadChildren: './shared/layouts/layouts.module#LayoutsModule',
+    // component: WrapperComponent,
     canActivateChild: [MetaGuard]
+    /* children: [
+      {
+        path: 'startseite',
+        loadChildren: './startseite/startseite.module#StartseiteModule'
+      },
+      {
+        path: '**',
+        loadChildren: './not-found/not-found.module#NotFoundModule'
+      },*/
   }
+  /* { path: '',
+    redirectTo: 'startseite',
+    pathMatch: 'full'
+  } */
 ];
+
+export const AppRoutes = RouterModule.forRoot(routes, { initialNavigation: 'enabled' });

@@ -1,8 +1,14 @@
 import { NgModule } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { TransferState } from '@angular/platform-browser';
-import { MissingTranslationHandler, TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { CommonMissingTranslationHandler, TranslatesService, } from '../translates.service';
+
+import { TranslateLoader, TranslateModule, MissingTranslationHandler } from '@ngx-translate/core';
+
+import {
+  TranslatesService,
+  CommonMissingTranslationHandler,
+} from '@shared/translates/translates.service';
+
 import { TranslatesBrowserLoaderService } from './translates-browser-loader.service';
 
 export function translateStaticLoader(
@@ -28,5 +34,4 @@ export function translateStaticLoader(
   ],
   providers: [TranslatesService],
 })
-export class TranslatesBrowserModule {
-}
+export class TranslatesBrowserModule {}

@@ -11,7 +11,7 @@ export class TranslatesBrowserLoaderService implements TranslateLoader {
     private suffix: string = '.json',
     private transferState: TransferState,
     private http: HttpClient,
-  ) { }
+  ) {}
 
   public getTranslation(lang: string): Observable<any> {
     const key: StateKey<number> = makeStateKey<number>(`transfer-translate-${lang}`);

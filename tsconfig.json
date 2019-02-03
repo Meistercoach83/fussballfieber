@@ -1,7 +1,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "src",
+    "paths": {
+      "@shared/*": [
+        "app/shared/*"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -12,16 +17,12 @@
     "typeRoots": [
       "node_modules/@types"
     ],
-    "paths": {
-      "@angular/*": ["node_modules/@angular/*"]
-    },
     "lib": [
-      "es2017",
+      "es2016",
       "dom"
     ]
   },
-  "exclude": [
-    "test.ts",
-    "**/*.spec.ts"
-  ]
+  "angularCompilerOptions": {
+    "preserveWhitespaces": false
+  }
 }

@@ -6,12 +6,12 @@ import { TranslateLoader, TranslateModule, MissingTranslationHandler } from '@ng
 import {
   TranslatesService,
   CommonMissingTranslationHandler,
-} from '../translates.service';
+} from '@shared/translates/translates.service';
 
 import { TranslatesServerLoaderService } from './translates-server-loader.service';
 
 export function translateFactory(transferState: TransferState): TranslatesServerLoaderService {
-  return new TranslatesServerLoaderService('dist/assets/i18n', '.json', transferState);
+  return new TranslatesServerLoaderService('./dist/assets/i18n', '.json', transferState);
 }
 
 @NgModule({
@@ -30,4 +30,4 @@ export function translateFactory(transferState: TransferState): TranslatesServer
   ],
   providers: [TranslatesService],
 })
-export class TranslatesServerModule { }
+export class TranslatesServerModule {}

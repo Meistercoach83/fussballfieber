@@ -8,7 +8,7 @@ export class UniversalStorage implements Storage {
   length: number;
   cookies: any;
 
-  constructor(private cookieService: CookieService) { }
+  constructor(private cookieService: CookieService) {}
 
   public clear(): void {
     this.cookieService.removeAll();

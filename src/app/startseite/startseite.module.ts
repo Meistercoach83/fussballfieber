@@ -13,8 +13,8 @@ import { StartseiteWeitereInfosComponent } from './startseite-weitere-infos/star
 import { StartseiteNewsletterComponent } from './startseite-newsletter/startseite-newsletter.component';
 import { StartseiteStadionComponent } from './startseite-stadion/startseite-stadion.component';
 import { DeferLoadDirective, DeferLoadModule } from '@trademe/ng-defer-load';
-import { SharedComponentsModule } from '../shared/components/shared-components.module';
-import { AgmCoreModule } from '@agm/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { SharedComponentsModule } from '@shared/components/shared-components.module';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,8 @@ import { AgmCoreModule } from '@agm/core';
     DeferLoadModule,
     NgPipesModule,
     RouterModule.forChild(startseiteRoutes),
-    SharedComponentsModule
+    SharedComponentsModule,
+    TranslateModule
   ],
   providers: [
     DeferLoadDirective

@@ -15,8 +15,7 @@ export class MyScrollServiceService {
   constructor(private scrollToService: ScrollToService) { }
 
   scrollTo(config: ScrollToConfigOptions): void {
-    console.log(config);
-    const options = { ...this.config, ...config };
+    const options: any = { ...this.config, ...config };
     this.scrollToService.scrollTo(options);
   }
 

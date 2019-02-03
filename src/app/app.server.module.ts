@@ -1,24 +1,26 @@
 import { NgModule } from '@angular/core';
 import { ServerModule, ServerTransferStateModule } from '@angular/platform-server';
-import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader';
-import { AppModule } from './app.module';
-import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader';
+import { TranslatesServerModule } from '@shared/translates/translates-server';
+import { AppComponent } from './app.component';
+import { AppModule } from './app.module';
+import { InlineStyleComponent } from './inline-style/inline-style.component';
+import { InlineStyleModule } from './inline-style/inline-style.module';
 import { CookieBackendService, CookieService } from 'ngx-cookie';
-import { TranslatesServerModule } from './shared/translates/translates-server/translates-server.module';
 
 @NgModule({
   imports: [
+    // AppModule - FIRST!!!
     AppModule,
     ServerModule,
     NoopAnimationsModule,
-    ModuleMapLoaderModule,
     ServerTransferStateModule,
-    TranslatesServerModule
+    InlineStyleModule,
+    ModuleMapLoaderModule,
+    TranslatesServerModule,
   ],
-  bootstrap: [
-    AppComponent
-  ],
+  bootstrap: [AppComponent, InlineStyleComponent],
   providers: [
     { provide: CookieService, useClass: CookieBackendService },
   ],

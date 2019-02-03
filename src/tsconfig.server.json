@@ -1,14 +1,18 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../dist/out-tsc/app/server",
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
     "module": "commonjs",
-    "types": [
-      "jasmine",
-      "node"
-    ]
+    "types": ["node"],
+    "typeRoots": ["../node_modules/@types"]
   },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts",
+    "node_modules"
+  ],
   "angularCompilerOptions": {
-    "entryModule": "./app/app.server.module#AppServerModule"
+    "entryModule": "app/app.server.module#AppServerModule"
   }
 }

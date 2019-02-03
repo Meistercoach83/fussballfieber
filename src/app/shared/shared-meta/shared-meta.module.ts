@@ -16,8 +16,7 @@ export function metaFactory(translate: TranslateService): MetaLoader {
       'og:type': 'website',
       'og:locale': 'de_DE',
       'og:locale:alternate': [
-        { code: 'en', name: 'English', culture: 'en-US' },
-        { code: 'de', name: 'Deutsch', culture: 'de-DE' },
+        { code: 'en', name: 'English', culture: 'en-US' }
       ]
         .map((lang: any) => lang.culture)
         .toString(),
@@ -34,4 +33,4 @@ export function metaFactory(translate: TranslateService): MetaLoader {
     }),
   ],
 })
-export class SharedMetaModule { }
+export class SharedMetaModule {}
