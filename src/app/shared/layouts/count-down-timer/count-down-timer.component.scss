@@ -18,18 +18,33 @@ h1 {
   text-align: center !important;
 }
 
-@media (max-width: 480px) and (max-width: 767px) {
-  h1 {
-    font-size: 1rem;
-  }
-}
-
 .countdown_part {
   display:inline-block;
   padding:0 1.5rem;
   margin-bottom:1.72rem;
   text-align: center !important;
 }
+
+@media (max-width: 480px) and (max-width: 767px) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  .countdown_part_small {
+    display:inline-block;
+    padding:0 0.3rem;
+    margin-bottom:1.72rem;
+    text-align: center !important;
+  }
+
+  .countdown_part {
+    display:inline-block;
+    padding:0 1rem;
+    margin-bottom:1.72rem;
+    text-align: center !important;
+  }
+}
+
 
 .countdown_part.first {
   padding-left:0;
