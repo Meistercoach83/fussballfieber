@@ -185,7 +185,7 @@ export class StartseiteAusrichterComponent implements OnInit {
       job: 'Student',
       positionInClub: 'Spieler Herrenmannschaft',
       positionInOrg: 'Pressearbeit & Sponsoring',
-      imageUrl: '',
+      imageUrl: '/assets/images/ansprechpartner/Simon-min.jpg',
       showBackside: false,
       facebook: 'https://www.facebook.com/simon.backes.7',
       twitter: '',
