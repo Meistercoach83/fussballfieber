@@ -154,7 +154,8 @@
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/server/environment.prod.ts"
                 }
-              ]
+              ],
+              "serviceWorker": true
             }
           }
         }
