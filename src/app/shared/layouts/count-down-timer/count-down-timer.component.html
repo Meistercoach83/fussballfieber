@@ -1,6 +1,5 @@
 <ng-container *ngIf="displayTime; else loadingTemplate">
-  {{displayTime | json}}
-  <!--<div class="first" [class]="countDownPart">
+  <div class="first" [class]="countDownPart">
     <h1 class="days">{{ displayTime.days }}</h1>
     <p class="timeRefDays">Tage</p>
   </div>
@@ -15,7 +14,7 @@
   <div class="last" [class]="countDownPart">
     <h1 class="seconds">{{ displayTime.seconds }}</h1>
     <p class="timeRefSeconds">Sek</p>
-  </div>-->
+  </div>
 </ng-container>
 
 <ng-template #loadingTemplate>
