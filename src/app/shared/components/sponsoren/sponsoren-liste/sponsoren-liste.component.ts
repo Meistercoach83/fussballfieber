@@ -46,7 +46,12 @@ export class SponsorenListeComponent implements OnInit {
     {
       title: 'Praxis für Ergotherapie Nadine Stiwitz',
       imageUrl: '/assets/images/sponsoren/ergotherapie-nadine-stiwitz.jpg',
-      url: 'http://www.ergo-wallhalben.de/'
+      url: 'http://www.ergo-wallhalben.de'
+    },
+    {
+      title: 'Brennerei Michel',
+      imageUrl: '/assets/images/sponsoren/Brennerei-Michel.jpg',
+      url: 'http://www.brennerteam.de'
     }
   ];
 
