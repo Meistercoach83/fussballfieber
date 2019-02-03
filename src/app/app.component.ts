@@ -18,7 +18,7 @@ export class AppComponent {
     this.meta.setTag('description', this.description);
     this.meta.setTag('application-name', this.description);
     this.meta.setTag('apple-mobile-web-app-title', this.description);
-
+    this.meta.setTag('content-language', 'de');
     this.meta.setTag('og:title', this.title);
     this.meta.setTag('site_name', 'fussballfieber2019.de');
     this.meta.setTag('og:description', this.description);
