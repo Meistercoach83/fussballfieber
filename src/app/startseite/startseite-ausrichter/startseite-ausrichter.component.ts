@@ -176,6 +176,20 @@ export class StartseiteAusrichterComponent implements OnInit {
       facebook: 'https://www.facebook.com/nathy.fe.3',
       twitter: '',
       email: 'n.feller@fussballfieber2019.de'
+    },
+    {
+      firstName: 'Simon',
+      lastName: 'Backes',
+      age: 21,
+      club: 'SF Winterbach',
+      job: 'Student',
+      positionInClub: 'Spieler Herrenmannschaft',
+      positionInOrg: 'Pressearbeit & Sponsoring',
+      imageUrl: '',
+      showBackside: false,
+      facebook: 'https://www.facebook.com/simon.backes.7',
+      twitter: '',
+      email: 's.backes@fussballfieber2019.de'
     }
   ];
 
