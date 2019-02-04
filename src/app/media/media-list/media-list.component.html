@@ -1,0 +1,29 @@
+<p class="text-black-50" *ngIf="items.length === 0">Es wurden noch keine Bilder zu dieser Sammlung hinzugefügt.</p>
+
+<gallery *ngIf="galleryConfig$ | async; let config"
+         [items]="items"
+         [counterPosition]="'bottom'"
+         thumbPosition="bottom"
+         [imageSize]="'contain'"
+         [thumbWidth]="config.thumbWidth"
+         [thumbHeight]="config.thumbHeight"
+         [thumbTemplate]="thumbTemplate"
+         [itemTemplate]="itemTemplate">
+</gallery>
+
+<ng-template #thumbTemplate let-type="type">
+  <span *ngIf="type === 'youtube'" class="item-type">
+    <i class="fa fa-youtube"></i>
+  </span>
+  <span *ngIf="type === 'video'" class="item-type">
+    <i class="fa fa-play"></i>
+  </span>
+</ng-template>
+
+<ng-template #itemTemplate
+             let-index="index"
+             let-type="type"
+             let-data="data"
+             let-currIndex="currIndex">
+  <app-media-item [item]="data"></app-media-item>
+</ng-template>

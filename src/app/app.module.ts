@@ -10,6 +10,8 @@ import { TranslatesService } from '@shared/translates';
 import { AppRoutes } from './app.routing';
 import { AppComponent } from './app.component';
 import { UniversalStorage } from '@shared/storage/universal.storage';
+import { GalleryModule } from '@ngx-gallery/core';
+import { LightboxModule } from '@ngx-gallery/lightbox';
 
 export function initLanguage(translateService: TranslatesService): Function {
   return (): Promise<any> => translateService.initLanguage();
@@ -17,7 +19,7 @@ export function initLanguage(translateService: TranslatesService): Function {
 
 @NgModule({
   imports: [
-    BrowserModule.withServerTransition({ appId: 'my-app' }),
+    BrowserModule.withServerTransition({appId: 'fussballfieber'}),
     TransferHttpCacheModule,
     HttpClientModule,
     RouterModule,
@@ -25,12 +27,14 @@ export function initLanguage(translateService: TranslatesService): Function {
     BrowserAnimationsModule,
     CookieModule.forRoot(),
     SharedModule.forRoot(),
+    GalleryModule,
+    LightboxModule
   ],
   declarations: [AppComponent],
   providers: [
     CookieService,
     UniversalStorage,
-    { provide: APP_INITIALIZER, useFactory: initLanguage, multi: true, deps: [TranslatesService] },
+    {provide: APP_INITIALIZER, useFactory: initLanguage, multi: true, deps: [TranslatesService]},
   ],
 })
 export class AppModule {
