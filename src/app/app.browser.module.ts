@@ -7,6 +7,7 @@ import { AppModule } from './app.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { InlineStyleModule } from './inline-style/inline-style.module';
 import { InlineStyleComponent } from './inline-style/inline-style.component';
+import { environment } from '../environments/browser/environment';
 
 export function getRequest(): any {
   return { headers: { cookie: document.cookie } };
@@ -19,7 +20,7 @@ export function getRequest(): any {
     BrowserTransferStateModule,
     TranslatesBrowserModule,
     InlineStyleModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: false }),
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [
     {
