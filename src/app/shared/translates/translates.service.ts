@@ -16,7 +16,7 @@ const LANG_LIST: ILang[] = [
   { code: 'de', name: 'Deutsch', culture: 'de-DE' },
   { code: 'fr', name: 'Français', culture: 'fr-FR' },
   { code: 'es', name: 'Español', culture: 'es-ES' },
-  { code: 'gb', name: 'English', culture: 'en-US' }
+  { code: 'en', name: 'English', culture: 'en-US' }
 ];
 const LANG_DEFAULT: ILang = LANG_LIST[0];
 const STORAGE_LANG_NAME: string = 'langCode';
@@ -83,7 +83,7 @@ export class TranslatesService {
   private _setLanguage(lang: ILang): void {
     this._translate.use(lang.code).subscribe(() => {
       this._meta.setTag('og:locale', lang.culture);
-      this._document.documentElement.lang = lang.code;
+      this._document.documentElement.lang = lang.culture;
     });
   }
 

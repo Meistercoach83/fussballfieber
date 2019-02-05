@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { MetaService } from '@ngx-meta/core';
+import { TranslatesService } from '@shared/translates';
 
 @Component({
   selector: 'app-root',
@@ -11,14 +12,13 @@ export class AppComponent {
   private title = 'Fussballfieber | Der Weltrekord';
   private description = 'Fussballfieber 2019 - Der Weltrekordversuch von Winterbach';
 
-  constructor(private readonly meta: MetaService) {
-
+  constructor(private readonly meta: MetaService, translatesService: TranslatesService) {
     this.meta.setTitle(this.title, true);
 
     this.meta.setTag('description', this.description);
     this.meta.setTag('application-name', this.description);
     this.meta.setTag('apple-mobile-web-app-title', this.description);
-    this.meta.setTag('content-language', 'de');
+    this.meta.setTag('content-language', translatesService.getCurrentLang());
     this.meta.setTag('og:title', this.title);
     this.meta.setTag('site_name', 'fussballfieber2019.de');
     this.meta.setTag('og:description', this.description);

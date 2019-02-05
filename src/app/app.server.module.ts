@@ -8,6 +8,7 @@ import { AppModule } from './app.module';
 import { InlineStyleComponent } from './inline-style/inline-style.component';
 import { InlineStyleModule } from './inline-style/inline-style.module';
 import { CookieBackendService, CookieService } from 'ngx-cookie';
+import { ServiceWorkerModuleMock } from './shared/services/service-worker.mock.module';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { CookieBackendService, CookieService } from 'ngx-cookie';
     InlineStyleModule,
     ModuleMapLoaderModule,
     TranslatesServerModule,
+    ServiceWorkerModuleMock
   ],
   bootstrap: [AppComponent, InlineStyleComponent],
   providers: [
