@@ -12,7 +12,7 @@ import { StartseiteAusrichterComponent } from './startseite-ausrichter/startseit
 import { StartseiteWeitereInfosComponent } from './startseite-weitere-infos/startseite-weitere-infos.component';
 import { StartseiteNewsletterComponent } from './startseite-newsletter/startseite-newsletter.component';
 import { StartseiteStadionComponent } from './startseite-stadion/startseite-stadion.component';
-import { DeferLoadDirective, DeferLoadModule } from '@trademe/ng-defer-load';
+import { DeferLoadModule } from '@trademe/ng-defer-load';
 import { TranslateModule } from '@ngx-translate/core';
 import { SharedComponentsModule } from '@shared/components/shared-components.module';
 
@@ -35,9 +35,6 @@ import { SharedComponentsModule } from '@shared/components/shared-components.mod
     RouterModule.forChild(startseiteRoutes),
     SharedComponentsModule,
     TranslateModule
-  ],
-  providers: [
-    DeferLoadDirective
   ]
 })
 export class StartseiteModule { }
