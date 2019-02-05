@@ -46,7 +46,7 @@ export class StartseiteAusrichterComponent implements OnInit {
       club: 'SG Hassel',
       job: 'IT-Netzwerktechniker beim IT-Dienstleistungszentrum des Saarlandes',
       positionInClub: 'Betreuer',
-      positionInOrg: 'Externer Berater',
+      positionInOrg: 'Sponsoring & Eventplanung',
       imageUrl: '/assets/images/ansprechpartner/Torsten-min.jpg',
       showImage: false,
       showBackside: false,
