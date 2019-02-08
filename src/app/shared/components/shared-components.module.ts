@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MyScrollServiceService } from '@shared/services/my-scroll-service.service';
 import { TranslatesService } from '@shared/translates';
 import { TranslateModule } from '@ngx-translate/core';
+import { NgPipesModule } from 'ngx-pipes';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { TranslateModule } from '@ngx-translate/core';
     AgmSnazzyInfoWindowModule,
     RouterModule,
     CommonModule,
+    NgPipesModule,
     ReactiveFormsModule,
     TranslateModule
   ],

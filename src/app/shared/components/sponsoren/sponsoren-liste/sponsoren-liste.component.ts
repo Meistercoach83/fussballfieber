@@ -52,6 +52,11 @@ export class SponsorenListeComponent implements OnInit {
       title: 'Brennerei Michel',
       imageUrl: '/assets/images/sponsoren/Brennerei-Michel.jpg',
       url: 'http://www.brennerteam.de'
+    },
+    {
+      title: 'DFB / Fussball.de',
+      imageUrl: '/assets/images/sponsoren/dfb-fussballde.jpg',
+      url: 'http://www.fussball.de'
     }
   ];
 

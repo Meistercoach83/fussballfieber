@@ -15,6 +15,7 @@ import { StartseiteStadionComponent } from './startseite-stadion/startseite-stad
 import { DeferLoadDirective, DeferLoadModule } from '@trademe/ng-defer-load';
 import { TranslateModule } from '@ngx-translate/core';
 import { SharedComponentsModule } from '@shared/components/shared-components.module';
+import { StartseiteNewsComponent } from './startseite-news/startseite-news.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { SharedComponentsModule } from '@shared/components/shared-components.mod
     StartseiteWeitereInfosComponent,
     StartseiteNewsletterComponent,
     StartseiteStadionComponent,
+    StartseiteNewsComponent,
   ],
   imports: [
     CommonModule,
