@@ -14,7 +14,16 @@
                 <div class="frontside h-100" (click)="changeStatus(teamMember)">
                   <div class="card h-100">
                     <div class="card-body text-center">
-                      <img class="img-fluid" *ngIf="teamMember.imageUrl" [src]="teamMember.imageUrl" alt="card image">
+
+                      <div preRender="false" (deferLoad)="teamMember.showImage = true">
+                        <ng-container *ngIf="teamMember.showImage">
+                          <img class="img-fluid"
+                               *ngIf="teamMember.imageUrl" [src]="teamMember.imageUrl"
+                               alt="{{teamMember.firstName}} {{teamMember.lastName}}">
+                        </ng-container>
+                      </div>
+
+
                       <h4 class="card-title">{{teamMember.firstName}} {{teamMember.lastName}}</h4>
                       <p class="card-text text-black-50">
                         <span style="font-weight: bold;color: #ff6600;">{{teamMember.positionInOrg}}</span><br/>
@@ -30,7 +39,8 @@
                         <span class="card-title">{{teamMember.firstName}} {{teamMember.lastName}}</span>
                         <p class="card-text text-black-50">
                           {{teamMember.job}}<br/>
-                          <span style="font-weight: bold;color: #ff6600;">{{teamMember.positionInClub}}, {{teamMember.club}}</span>
+                          <span style="font-weight: bold;color: #ff6600;">{{teamMember.positionInClub}}
+                            , {{teamMember.club}}</span>
                         </p>
                       </div>
                     </div>

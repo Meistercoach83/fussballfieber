@@ -20,7 +20,7 @@ export function getRequest(): any {
     BrowserTransferStateModule,
     TranslatesBrowserModule,
     InlineStyleModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    environment.production ? ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production }) : []
   ],
   providers: [
     {

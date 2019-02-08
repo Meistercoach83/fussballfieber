@@ -1,16 +1,18 @@
 <div class="content-box text-white">
   <h3>Veranstaltungsgelände</h3>
 
-  <div class="images text-center" (deferLoad)="currentImage.show = true">
+  <div class="images text-center" preRender="false" (deferLoad)="currentImage.show=true">
     <ng-container *ngIf="currentImage.show">
       <img alt="{{currentImage.url}}" [src]="currentImage.url" class="img-fluid"/>
     </ng-container>
   </div>
 
+
   <div class="row" style="margin-top: 30px; text-align: center">
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-2 thumbnails"
          *ngFor="let image of imageList"
          style="margin-top: 3rem"
+         preRender="false"
          [class.active]="image.url === currentImage.url"
          (deferLoad)="image.show = true">
       <ng-container *ngIf="image.show">

@@ -9,6 +9,7 @@ export interface ITeamMember {
   positionInClub: string;
   positionInOrg: string;
   imageUrl: string;
+  showImage: boolean;
   showBackside: boolean;
   facebook: string;
   twitter: string;
@@ -32,6 +33,7 @@ export class StartseiteAusrichterComponent implements OnInit {
       positionInClub: 'Pressewart',
       positionInOrg: 'Pressearbeit & Sponsoring',
       imageUrl: '/assets/images/ansprechpartner/Thomas-min.jpg',
+      showImage: false,
       showBackside: false,
       facebook: 'https://www.facebook.com/thomas.handle',
       twitter: '',
@@ -44,8 +46,9 @@ export class StartseiteAusrichterComponent implements OnInit {
       club: 'SG Hassel',
       job: 'IT-Netzwerktechniker beim IT-Dienstleistungszentrum des Saarlandes',
       positionInClub: 'Betreuer',
-      positionInOrg: 'Externer Berater',
+      positionInOrg: 'Sponsoring & Eventplanung',
       imageUrl: '/assets/images/ansprechpartner/Torsten-min.jpg',
+      showImage: false,
       showBackside: false,
       facebook: 'https://www.facebook.com/torsten.schafer.73',
       twitter: '',
@@ -62,6 +65,7 @@ export class StartseiteAusrichterComponent implements OnInit {
       imageUrl: '/assets/images/ansprechpartner/Dirk-min.jpg',
       showBackside: false,
       facebook: 'https://www.facebook.com/dirk.stiwitz',
+      showImage: false,
       twitter: '',
       email: 'd.stiwitz@fussballfieber2019.de'
     },
@@ -74,6 +78,7 @@ export class StartseiteAusrichterComponent implements OnInit {
       positionInClub: '2. Vorsitzender',
       positionInOrg: 'Koordination',
       imageUrl: '/assets/images/ansprechpartner/Ronny-min.jpg',
+      showImage: false,
       showBackside: false,
       facebook: 'https://www.facebook.com/ronny.hassel',
       twitter: '',
@@ -88,6 +93,7 @@ export class StartseiteAusrichterComponent implements OnInit {
       positionInClub: 'PR und Marketing',
       positionInOrg: 'PR und Marketing',
       imageUrl: '/assets/images/ansprechpartner/Robin-min.jpg',
+      showImage: false,
       showBackside: false,
       facebook: 'https://www.facebook.com/robin.klein.374',
       twitter: '',
@@ -102,6 +108,7 @@ export class StartseiteAusrichterComponent implements OnInit {
       positionInClub: 'Schriftführerin',
       positionInOrg: 'Organisation Spielerbetreuung',
       imageUrl: '/assets/images/ansprechpartner/Maike-min.jpg',
+      showImage: false,
       showBackside: false,
       facebook: '',
       twitter: '',
@@ -116,6 +123,7 @@ export class StartseiteAusrichterComponent implements OnInit {
       positionInClub: 'Beisitzer',
       positionInOrg: 'Organisation Spiel und Beweisführung',
       imageUrl: '/assets/images/ansprechpartner/Thore-min.jpg',
+      showImage: false,
       showBackside: false,
       facebook: '',
       twitter: '',
@@ -130,6 +138,7 @@ export class StartseiteAusrichterComponent implements OnInit {
       positionInClub: 'Beisitzer',
       positionInOrg: 'Organisation Spiel und Beweisführung',
       imageUrl: '/assets/images/ansprechpartner/Timo-min.jpg',
+      showImage: false,
       showBackside: false,
       facebook: '',
       twitter: '',
@@ -143,6 +152,7 @@ export class StartseiteAusrichterComponent implements OnInit {
       job: 'Fachmitarbeiter Wirtschaftsprüfung',
       positionInClub: 'Spieler',
       positionInOrg: 'Organisation Catering und Spielerbetreuung',
+      showImage: false,
       imageUrl: '',
       showBackside: false,
       facebook: 'https://www.facebook.com/lukas.kramer.399',
@@ -158,6 +168,7 @@ export class StartseiteAusrichterComponent implements OnInit {
       positionInClub: 'Schriftführer',
       positionInOrg: 'Organisation Catering und Spielerbetreuung',
       imageUrl: '/assets/images/ansprechpartner/Lukas-Saar-min.jpg',
+      showImage: false,
       showBackside: false,
       facebook: 'https://www.facebook.com/lukassaar93',
       twitter: '',
@@ -172,6 +183,7 @@ export class StartseiteAusrichterComponent implements OnInit {
       positionInClub: 'Spartenleiterin Damenfußball',
       positionInOrg: 'Organisation Catering und Spielerbetreuung',
       imageUrl: '/assets/images/ansprechpartner/Nathalie-min.jpg',
+      showImage: false,
       showBackside: false,
       facebook: 'https://www.facebook.com/nathy.fe.3',
       twitter: '',
@@ -186,6 +198,7 @@ export class StartseiteAusrichterComponent implements OnInit {
       positionInClub: 'Spieler Herrenmannschaft',
       positionInOrg: 'Pressearbeit & Sponsoring',
       imageUrl: '/assets/images/ansprechpartner/Simon-min.jpg',
+      showImage: false,
       showBackside: false,
       facebook: 'https://www.facebook.com/simon.backes.7',
       twitter: '',
