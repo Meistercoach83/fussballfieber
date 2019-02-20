@@ -25,14 +25,14 @@ h1 {
   text-align: center !important;
 }
 
-@media (max-width: 480px) and (max-width: 767px) {
+@media (max-width: 767px) {
   h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .countdown_part_small {
     display:inline-block;
-    padding:0 0.3rem;
+    padding:0 0.4rem;
     margin-bottom:1.72rem;
     text-align: center !important;
   }
@@ -43,16 +43,6 @@ h1 {
     margin-bottom:1.72rem;
     text-align: center !important;
   }
-}
-
-
-.countdown_part.first {
-  padding-left:0;
-}
-
-.countdown_part.last {
-  padding-right:0;
-  border-right:none;
 }
 
 .countdown_part h1 {

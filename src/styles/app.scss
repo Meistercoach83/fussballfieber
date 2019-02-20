@@ -3,6 +3,9 @@
 }
 
 body {
+  background:linear-gradient(to bottom, #050c26 0, #050c26 33%, #050c26 33%, #032a79 66%, #032a79 66%, #032a79 100%);
+  // background-image: linear-gradient(to bottom, #0a1223 50%, #192c58);
+  opacity: 33%;
   color: #fff;
   height: 100%;
 }

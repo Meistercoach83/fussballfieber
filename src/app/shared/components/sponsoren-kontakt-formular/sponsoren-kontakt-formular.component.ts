@@ -31,28 +31,4 @@ export class SponsorenKontaktFormularComponent implements OnInit {
     });
   }
 
-  /*
-  submitContactForm() {
-    this.isLoading = true;
-
-    const {
-      name, email, message
-    } = this.form.value;
-
-    this.emailService.sendEmail({
-      name, email, message
-    }).subscribe(() => {
-      this.form.reset();
-      this.isLoading = false;
-      this.showSuccess = true;
-    }, (error: HttpErrorResponse) => {
-      console.log(error);
-      this.errorMessage = error.message;
-      this.showError = true;
-    });
-
-    // const headerOptions = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded');
-
-  } */
-
 }

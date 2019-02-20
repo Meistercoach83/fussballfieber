@@ -3,12 +3,15 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12 text-center mb-5">
-        <h1 class="my-heading">{{'header.title' | translate}} <small>{{'header.date' | translate}}</small></h1>
+        <h1 class="my-heading">{{'header.title' | translate}}
+          <small class="hidden-xs">{{'header.date' | translate}}</small>
+        </h1>
+        <span class="hidden-sm hidden-md hidden-lg hidden-xl" style="color: #ff8939">{{'header.date' | translate}}</span>
         <p class="myp-slider text-center text-uppercase hidden-xs">{{'header.subTitle' | translate}}</p>
 
         <div class="row hidden-sm hidden-md hidden-lg hidden-xl">
           <div class="col-xs-12">
-            <p class="myp-slider text-center text-uppercase">{{'header.subTitle' | translate}}</p>
+            <p class="myp-slider text-center text-uppercase"><br />{{'header.subTitle' | translate}}</p>
           </div>
         </div>
 
@@ -23,7 +26,9 @@
          <a class="btn btn-primary btn-scroll floating-arrow"
              (click)="myScrollService.scrollTo({target: 'content'})"
              id="bottom">
-            <i class="fa fa-angle-down"></i> {{'header.infoBtn' | translate}}
+           <i class="fa fa-angle-down"></i>
+           <span class="hidden-xs">{{'header.infoBtn' | translate}}</span>
+           <span class="hidden-sm hidden-md hidden-lg hidden-xl"> Weitere Infos</span>
           </a>
         </div>
       </div>

@@ -1,11 +1,11 @@
-import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 // import { MyScrollServiceService } from '../../shared/services/my-scroll-service.service';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { ActivatedRoute, NavigationEnd, NavigationStart, Router } from '@angular/router';
 import { Observable } from 'rxjs/index';
-import { DomSanitizer } from '@angular/platform-browser';
 import { ILang, TranslatesService } from '@shared/translates';
 import { MyScrollServiceService } from '@shared/services/my-scroll-service.service';
+import { _document } from '@angular/platform-browser/src/browser';
 
 @Component({
   selector: 'app-menu',
@@ -24,6 +24,8 @@ export class MenuComponent implements OnInit, AfterViewInit {
   public langList$: Observable<ILang[]>;
   public currentLang: string;
 
+  @ViewChild('navbarResponsive') navbarResponsive: ElementRef;
+
   @HostListener('window:scroll', ['$event']) getNavbarCss(): void {
     if (window.pageYOffset > 150) {
       this.isTopOfPage = false;
@@ -37,7 +39,6 @@ export class MenuComponent implements OnInit, AfterViewInit {
   getImageClass() {
     this.breakpointObserver.observe(['(max-width:560px)']).subscribe((state: BreakpointState) => {
       if (state.matches) {
-        console.log('xs');
         this.imageClass = 'xs';
       }
     });
@@ -63,7 +64,7 @@ export class MenuComponent implements OnInit, AfterViewInit {
 
   constructor(private route: ActivatedRoute,
               private router: Router,
-              public sanitizer: DomSanitizer,
+              private elementRef: ElementRef,
               private _translatesService: TranslatesService,
               public breakpointObserver: BreakpointObserver,
               public myScrollService: MyScrollServiceService) {
@@ -82,6 +83,8 @@ export class MenuComponent implements OnInit, AfterViewInit {
       if (event instanceof NavigationStart) {
       } else if (event instanceof NavigationEnd) {
         this.isHomePage = this.isHomeUrl(event.url);
+        const elem =  document.getElementById('navbarResponsive');
+        elem.classList.remove('show');
         this.isHomePage ? this.myScrollService.scrollTo({ target: 'top' }) : this.myScrollService.scrollTo({ target: 'content' });
       }
     });

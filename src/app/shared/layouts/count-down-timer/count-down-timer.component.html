@@ -1,5 +1,5 @@
 <ng-container *ngIf="displayTime; else loadingTemplate">
-  <div class="first" [class]="countDownPart">
+  <div [class]="countDownPart" style="padding-left:0;">
     <h1 class="days">{{ displayTime.days }}</h1>
     <p class="timeRefDays">Tage</p>
   </div>
@@ -11,7 +11,7 @@
     <h1 class="minutes">{{ displayTime.minutes }}</h1>
     <p class="timeRefMinutes">Min</p>
   </div>
-  <div class="last" [class]="countDownPart">
+  <div [class]="countDownPart" style="border-right: 0; padding-right: 0">
     <h1 class="seconds">{{ displayTime.seconds }}</h1>
     <p class="timeRefSeconds">Sek</p>
   </div>
