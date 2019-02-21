@@ -1,21 +1,23 @@
-<ng-container *ngIf="displayTime; else loadingTemplate">
-  <div [class]="countDownPart" style="padding-left:0;">
-    <h1 class="days">{{ displayTime.days }}</h1>
-    <p class="timeRefDays">Tage</p>
+<div class="row" *ngIf="displayTime; else loadingTemplate">
+  <div class="col-xs-3 countdown_part text-center">
+    <div style="padding-left:0;margin-left: 1.8rem">
+      <h1 class="days">{{ displayTime.days }}</h1>
+      <p class="timeRefDays">Tage</p>
+    </div>
   </div>
-  <div [class]="countDownPart">
+  <div class="col-xs-3 countdown_part text-center">
     <h1 class="hours">{{ displayTime.hours }}</h1>
     <p class="timeRefHours">Std</p>
   </div>
-  <div [class]="countDownPart">
+  <div class="col-xs-3 countdown_part text-center">
     <h1 class="minutes">{{ displayTime.minutes }}</h1>
     <p class="timeRefMinutes">Min</p>
   </div>
-  <div [class]="countDownPart" style="border-right: 0; padding-right: 0">
+  <div class="col-xs-3 countdown_part text-center" style="border-right: 0">
     <h1 class="seconds">{{ displayTime.seconds }}</h1>
     <p class="timeRefSeconds">Sek</p>
   </div>
-</ng-container>
+</div>
 
 <ng-template #loadingTemplate>
   <app-loading-indicator></app-loading-indicator>

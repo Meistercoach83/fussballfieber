@@ -22,7 +22,7 @@ h1.my-heading {
   letter-spacing: -.13rem;
   font-size: 3.21rem;
   line-height: 3.44rem;
-  margin: 1.72rem 0;
+  margin: 1.72rem 0 1.72rem 1.8rem;
 }
 
 small {
@@ -80,4 +80,11 @@ p.myp.text-center {
   header h3 {
     font-size: 4rem;
   }
+}
+
+.headerLogo {
+  position: absolute;
+  width: 20vw;
+  right: 20vw;
+  top: 60vh;
 }

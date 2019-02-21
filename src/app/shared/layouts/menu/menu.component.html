@@ -2,24 +2,11 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-shrink navbar-dark"
        [class.mybg-dark]="!isTopOfPage">
 
-    <a style="border: 0" class="navbar-brand" href="https://www.fussballfieber2019.de">
-      <img alt="Logo" [ngClass]="imageClass" src="../../../../assets/images/logo.png"/>
-    </a>
-    <button class="navbar-toggler navbar-toggler-right"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-      <span class="fa fa-bars mfa-white"></span>
-    </button>
-
-    <!--<div id="main">
+    <div id="main">
       <button class="openNav"><span class="fa fa-bars"></span></button>
-    </div>-->
+    </div>
 
-    <!--<div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav">
       <button class="closebtn">×</button>
       <ul class="mob-ul">
         <li class="nav-item">
@@ -43,11 +30,11 @@
             translate}}</a>
         </li>
       </ul>
-    </div>-->
+    </div>
 
 
     <div class="collapse navbar-collapse" id="navbarResponsive" #navbarResponsive>
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-link">
           <a routerLink="/startseite" routerLinkActive="router-link-active">{{'pages.home' | translate}}</a>
         </li>
@@ -87,6 +74,22 @@
       </ul>
 
     </div>
+
+    <a *ngIf="showLogo"
+       style="border: 0"
+       class="navbar-brand"
+       href="https://www.fussballfieber2019.de">
+      <img alt="Logo" [ngClass]="imageClass" src="../../../../assets/images/logo.png"/>
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" style="margin-top: 1rem;"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="fa fa-bars mfa-white"></span>
+    </button>
   </nav>
 </ng-container>
 

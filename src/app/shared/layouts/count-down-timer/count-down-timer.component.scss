@@ -2,46 +2,9 @@ h1 {
   font-size: 3rem;
 }
 
-@media (max-width: 480px) {
-  .countdown_part_small {
-    display:inline-block;
-    padding:0 0.5rem;
-    margin-bottom:1.72rem;
-    text-align: center !important;
-  }
-}
-
-.countdown_part_small {
-  display:inline-block;
-  padding:0 0.5rem;
-  margin-bottom:1.72rem;
-  text-align: center !important;
-}
-
-.countdown_part {
-  display:inline-block;
-  padding:0 1.5rem;
-  margin-bottom:1.72rem;
-  text-align: center !important;
-}
-
 @media (max-width: 767px) {
   h1 {
     font-size: 1.5rem;
-  }
-
-  .countdown_part_small {
-    display:inline-block;
-    padding:0 0.4rem;
-    margin-bottom:1.72rem;
-    text-align: center !important;
-  }
-
-  .countdown_part {
-    display:inline-block;
-    padding:0 1rem;
-    margin-bottom:1.72rem;
-    text-align: center !important;
   }
 }
 

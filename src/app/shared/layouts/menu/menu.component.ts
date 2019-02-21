@@ -5,7 +5,6 @@ import { ActivatedRoute, NavigationEnd, NavigationStart, Router } from '@angular
 import { Observable } from 'rxjs/index';
 import { ILang, TranslatesService } from '@shared/translates';
 import { MyScrollServiceService } from '@shared/services/my-scroll-service.service';
-import { _document } from '@angular/platform-browser/src/browser';
 
 @Component({
   selector: 'app-menu',
@@ -20,6 +19,7 @@ export class MenuComponent implements OnInit, AfterViewInit {
 
   public isHomePage: boolean;
   public isTopOfPage = true;
+  public showLogo: boolean;
 
   public langList$: Observable<ILang[]>;
   public currentLang: string;
@@ -34,6 +34,7 @@ export class MenuComponent implements OnInit, AfterViewInit {
       this.isTopOfPage = true;
       this.getImageClass();
     }
+    this.showLogo = window.pageYOffset > window.innerHeight;
   }
 
   getImageClass() {
@@ -83,9 +84,9 @@ export class MenuComponent implements OnInit, AfterViewInit {
       if (event instanceof NavigationStart) {
       } else if (event instanceof NavigationEnd) {
         this.isHomePage = this.isHomeUrl(event.url);
-        const elem =  document.getElementById('navbarResponsive');
+        const elem = document.getElementById('navbarResponsive');
         elem.classList.remove('show');
-        this.isHomePage ? this.myScrollService.scrollTo({ target: 'top' }) : this.myScrollService.scrollTo({ target: 'content' });
+        this.isHomePage ? this.myScrollService.scrollTo({target: 'top'}) : this.myScrollService.scrollTo({target: 'content'});
       }
     });
   }

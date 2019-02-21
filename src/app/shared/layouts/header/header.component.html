@@ -1,37 +1,43 @@
 <header class="text-white">
   <div class="overlay"></div>
   <div class="container-fluid">
+
     <div class="row">
-      <div class="col-md-12 text-center mb-5">
-        <h1 class="my-heading">{{'header.title' | translate}}
-          <small class="hidden-xs">{{'header.date' | translate}}</small>
+      <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+        <h1 class="my-heading text-left">{{'header.title' | translate}}
+          <small class="hidden-xs hidden-sm">{{'header.date' | translate}}</small>
         </h1>
-        <span class="hidden-sm hidden-md hidden-lg hidden-xl" style="color: #ff8939">{{'header.date' | translate}}</span>
-        <p class="myp-slider text-center text-uppercase hidden-xs">{{'header.subTitle' | translate}}</p>
+        <span class="hidden-md hidden-lg hidden-xl"
+              style="margin-left: 1.8rem;color: #ff8939">{{'header.date' | translate}}</span>
+        <p class="myp-slider text-uppercase hidden-xs" style="margin-left: 1.8rem;">
+          {{'header.subTitle' | translate}}
+        </p>
 
         <div class="row hidden-sm hidden-md hidden-lg hidden-xl">
-          <div class="col-xs-12">
-            <p class="myp-slider text-center text-uppercase"><br />{{'header.subTitle' | translate}}</p>
+          <div class="col-xs-12" style="margin-left: 1.8rem;">
+            <p class="myp-slider text-uppercase"><br/>{{'header.subTitle' | translate}}</p>
           </div>
-        </div>
-
-      </div>
-
-      <div class="col-md-12 text-center">
-        <app-count-down-timer [end]="'2019-05-29 20:00:00'"></app-count-down-timer>
-      </div>
-
-      <div class="col-md-12 text-center mt-2">
-        <div class="scroll-down">
-         <a class="btn btn-primary btn-scroll floating-arrow"
-             (click)="myScrollService.scrollTo({target: 'content'})"
-             id="bottom">
-           <i class="fa fa-angle-down"></i>
-           <span class="hidden-xs">{{'header.infoBtn' | translate}}</span>
-           <span class="hidden-sm hidden-md hidden-lg hidden-xl"> Weitere Infos</span>
-          </a>
         </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+        <app-count-down-timer [end]="'2019-05-29 20:00:00'"></app-count-down-timer>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-4 text-center">
+        <a class="btn btn-primary btn-scroll floating-arrow"
+           (click)="myScrollService.scrollTo({target: 'content'})"
+           id="bottom">
+          <i class="fa fa-angle-down"></i>
+          <span> {{'header.infoBtn' | translate}}</span>
+        </a>
+      </div>
+    </div>
   </div>
+
+  <img alt="Logo" class="headerLogo hidden-xs" src="../../../../assets/images/logo.png"/>
 </header>
