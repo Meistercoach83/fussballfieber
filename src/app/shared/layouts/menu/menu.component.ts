@@ -78,14 +78,17 @@ export class MenuComponent implements OnInit, AfterViewInit {
     this.getImageClass();
   }
 
+  hideMenu() {
+    const elem = document.getElementById('navbarResponsive');
+    elem.classList.remove('show');
+  }
 
   ngAfterViewInit() {
     this.router.events.subscribe((event) => {
+      this.hideMenu();
       if (event instanceof NavigationStart) {
       } else if (event instanceof NavigationEnd) {
         this.isHomePage = this.isHomeUrl(event.url);
-        const elem = document.getElementById('navbarResponsive');
-        elem.classList.remove('show');
         this.isHomePage ? this.myScrollService.scrollTo({target: 'top'}) : this.myScrollService.scrollTo({target: 'content'});
       }
     });

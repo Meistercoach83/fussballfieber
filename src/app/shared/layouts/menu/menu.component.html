@@ -10,23 +10,28 @@
       <button class="closebtn">×</button>
       <ul class="mob-ul">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/startseite" routerLinkActive="router-link-active">{{'pages.home' |
+          <a class="nav-link" (click)="hideMenu()" routerLink="/startseite"
+             routerLinkActive="router-link-active">{{'pages.home' |
             translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/spiel" routerLinkActive="router-link-active">{{'pages.match' |
+          <a class="nav-link" (click)="hideMenu()" routerLink="/spiel"
+             routerLinkActive="router-link-active">{{'pages.match' |
             translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/event" routerLinkActive="router-link-active">{{'pages.program' |
+          <a class="nav-link" (click)="hideMenu()" routerLink="/event"
+             routerLinkActive="router-link-active">{{'pages.program' |
             translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/sponsoren" routerLinkActive="router-link-active">{{'pages.sponsors' |
+          <a class="nav-link" (click)="hideMenu()" routerLink="/sponsoren"
+             routerLinkActive="router-link-active">{{'pages.sponsors' |
             translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/media" routerLinkActive="router-link-active">{{'pages.contact' |
+          <a class="nav-link" (click)="hideMenu()" routerLink="/media"
+             routerLinkActive="router-link-active">{{'pages.contact' |
             translate}}</a>
         </li>
       </ul>
@@ -36,19 +41,24 @@
     <div class="collapse navbar-collapse" id="navbarResponsive" #navbarResponsive>
       <ul class="navbar-nav mr-auto">
         <li class="nav-link">
-          <a routerLink="/startseite" routerLinkActive="router-link-active">{{'pages.home' | translate}}</a>
+          <a routerLink="/startseite" (click)="hideMenu()"
+             routerLinkActive="router-link-active">{{'pages.home' | translate}}</a>
         </li>
         <li class="nav-link">
-          <a routerLink="/spiel" routerLinkActive="router-link-active">{{'pages.match' | translate}}</a>
+          <a routerLink="/spiel" (click)="hideMenu()"
+             routerLinkActive="router-link-active">{{'pages.match' | translate}}</a>
         </li>
         <li class="nav-link">
-          <a routerLink="/event" routerLinkActive="router-link-active">{{'pages.program' | translate}}</a>
+          <a routerLink="/event" (click)="hideMenu()"
+             routerLinkActive="router-link-active">{{'pages.program' | translate}}</a>
         </li>
         <li class="nav-link">
-          <a routerLink="/sponsoren" routerLinkActive="router-link-active">{{'pages.sponsors' | translate}}</a>
+          <a routerLink="/sponsoren" (click)="hideMenu()"
+             routerLinkActive="router-link-active">{{'pages.sponsors' | translate}}</a>
         </li>
         <li class="nav-link">
-          <a routerLink="/ansprechpartner" routerLinkActive="router-link-active">{{'pages.contact' | translate}}</a>
+          <a routerLink="/ansprechpartner" (click)="hideMenu()"
+             routerLinkActive="router-link-active">{{'pages.contact' | translate}}</a>
         </li>
 
         <!--<li class="nav-link dropdown">
@@ -75,13 +85,13 @@
 
     </div>
 
-    <a *ngIf="showLogo"
+    <!--<a *ngIf="showLogo"
        style="border: 0"
        class="navbar-brand"
        href="https://www.fussballfieber2019.de">
       <img alt="Logo" [ngClass]="imageClass" src="../../../../assets/images/logo.png"/>
-    </a>
-    <button class="navbar-toggler navbar-toggler-right" style="margin-top: 1rem;"
+    </a>-->
+    <button class="navbar-toggler navbar-toggler-left" style="margin-top: 1rem;"
             type="button"
             data-toggle="collapse"
             data-target="#navbarResponsive"
