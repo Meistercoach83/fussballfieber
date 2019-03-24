@@ -16,6 +16,7 @@ import { DeferLoadModule } from '@trademe/ng-defer-load';
 import { TranslateModule } from '@ngx-translate/core';
 import { SharedComponentsModule } from '@shared/components/shared-components.module';
 import { StartseiteNewsComponent } from './startseite-news/startseite-news.component';
+import { StartseiteGoldSponsorenComponent } from './startseite-gold-sponsoren/startseite-gold-sponsoren.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { StartseiteNewsComponent } from './startseite-news/startseite-news.compo
     StartseiteNewsletterComponent,
     StartseiteStadionComponent,
     StartseiteNewsComponent,
+    StartseiteGoldSponsorenComponent,
   ],
   imports: [
     CommonModule,
