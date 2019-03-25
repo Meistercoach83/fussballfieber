@@ -2,14 +2,8 @@ h1 {
   font-size: 3rem;
 }
 
-@media (max-width: 767px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-}
-
 .countdown_part h1 {
-  line-height: 2rem !important;
+  line-height: 2rem;
 }
 
 .countdown_part p {

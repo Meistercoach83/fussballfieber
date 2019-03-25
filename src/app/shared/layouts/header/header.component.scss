@@ -13,7 +13,6 @@
 }
 
 header {
-  // background-image: radial-gradient(circle at top left, #0a193b 33%, #2e7bff);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -27,7 +26,7 @@ h1.my-heading {
   letter-spacing: -.13rem;
   font-size: 3.21rem;
   line-height: 3.44rem;
-  margin: 1.72rem 0 1.72rem 1.8rem;
+  margin: 1.72rem 0 1.72rem 0;
 }
 
 small {

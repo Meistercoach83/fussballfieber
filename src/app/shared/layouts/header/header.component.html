@@ -2,47 +2,44 @@
   <div class="overlay"></div>
   <div class="container-fluid">
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
-        <h1 class="my-heading text-left">{{'header.title' | translate}}
-          <small class="hidden-xs hidden-sm">{{'header.date' | translate}}</small>
-        </h1>
-        <span class="hidden-md hidden-lg hidden-xl"
-              style="margin-left: 1.8rem;color: #ff8939">{{'header.date' | translate}}</span>
-        <p class="myp-slider text-uppercase hidden-xs" style="margin-left: 1.8rem;">
-          {{'header.subTitle' | translate}}
-        </p>
+    <div class="vertical-center" style="margin-top: -10vh; margin-left: 1.8rem">
+      <div class="row">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+          <h1 class="my-heading text-left">{{'header.title' | translate}}
+            <small class="hidden-xs hidden-sm">{{'header.date' | translate}}</small>
+          </h1>
+          <span class="hidden-md hidden-lg hidden-xl"
+                style="margin-left: 1.8rem;color: #ff8939">{{'header.date' | translate}}</span>
+          <p class="myp-slider text-uppercase hidden-xs">{{'header.subTitle' | translate}}</p>
 
-        <div class="row hidden-sm hidden-md hidden-lg hidden-xl">
-          <div class="col-xs-12" style="margin-left: 1.8rem;">
-            <p class="myp-slider text-uppercase"><br/>{{'header.subTitle' | translate}}</p>
+          <div class="row hidden-sm hidden-md hidden-lg hidden-xl">
+            <div class="col-xs-12">
+              <p class="myp-slider text-uppercase"><br/>{{'header.subTitle' | translate}}</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-        <app-count-down-timer [end]="'2019-05-29 20:00:00'"></app-count-down-timer>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-4 text-center">
-        <a class="btn btn-primary btn-scroll floating-arrow"
-           (click)="myScrollService.scrollTo({target: 'content'})"
-           id="bottom">
-          <i class="fa fa-angle-down"></i>
-          <span> {{'header.infoBtn' | translate}}</span>
-        </a>
-      </div>
-    </div>
-
-    <div style="position:absolute; top:95vh; transform:translateY(-100%); width:100%;">
       <div class="row">
-        <div class="col-xs-12 col-sm-offset-1 col-sm-7">
-          <h3 class="hidden-xs" style="font-size: 1.3rem">Mit freundlicher Unterstützung von</h3>
+        <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+          <app-count-down-timer [end]="'2019-05-29 20:00:00'"></app-count-down-timer>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-4 text-center">
+          <a class="btn btn-primary btn-scroll floating-arrow"
+             (click)="myScrollService.scrollTo({target: 'content'})"
+             id="bottom">
+            <i class="fa fa-angle-down"></i>
+            <span> {{'header.infoBtn' | translate}}</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-4">
+          <h3 class="hidden-xs" style="font-size: 1.3rem">Mit freundlicher Unterstützung von</h3>
           <div class="grayscale">
             <ng-container *ngFor="let sponsor of sponsors">
               <a target="_blank" [href]="sponsor.url">
@@ -51,22 +48,10 @@
               </a>
             </ng-container>
           </div>
-
-          <!--<div class="row grayscale">
-            <div class="col-xs-4 pb-1 col-sm-3 col-md-2 col-lg-3" *ngFor="let sponsor of sponsors">
-              <a target="_blank" [href]="sponsor.url">
-                <img class="img-fluid sponsorsImg" [src]="sponsor.image"
-                     [alt]="sponsor.title"/>
-              </a>
-            </div>
-          </div>-->
-
         </div>
       </div>
     </div>
-
   </div>
-
 
   <img alt="Logo" class="headerLogo hidden-xs" src="../../../../assets/images/logo.png"/>
 </header>
