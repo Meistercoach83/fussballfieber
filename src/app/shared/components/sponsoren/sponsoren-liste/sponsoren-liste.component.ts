@@ -52,6 +52,11 @@ export class SponsorenListeComponent implements OnInit {
       title: 'Volkswagen Autohaus Schmidt',
       imageUrl: '/assets/images/sponsoren/Schmidt_GmbH_Logo.png',
       url: 'http://reisemobile-doerr.de/'
+    },
+    {
+      title: 'Treuhand Saar',
+      imageUrl: '/assets/images/sponsoren/THS.gif',
+      url: 'https://www.treuhand-saar.de'
     }
   ];
 
