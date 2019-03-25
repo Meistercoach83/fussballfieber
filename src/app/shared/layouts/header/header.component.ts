@@ -10,6 +10,29 @@ export class HeaderComponent implements OnInit {
 
   @Input() isHomePage = false;
 
+  sponsors = [
+    {
+      title: 'Volkswagen Autohaus Schmidt',
+      image: '/assets/images/sponsoren/Schmidt_GmbH_Logo.png',
+      url: 'https://www.autohaus-schmidt-wnd.de'
+    },
+    {
+      title: 'Bosch Car Service + Reisemobile Dörr',
+      image: '/assets/images/sponsoren/Doerr.png',
+      url: 'http://reisemobile-doerr.de'
+    },
+    {
+      title: 'Peter Groß Bau',
+      image: '/assets/images/sponsoren/PG_Logo.png',
+      url: 'https://gross-bau.de'
+    },
+    {
+      title: 'Treuhand Saar',
+      image: '/assets/images/sponsoren/THS.gif',
+      url: 'https://www.treuhand-saar.de'
+    }
+  ];
+
   constructor(public myScrollService: MyScrollServiceService) {
   }
 

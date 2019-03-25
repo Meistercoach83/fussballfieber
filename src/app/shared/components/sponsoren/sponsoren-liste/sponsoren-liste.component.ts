@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { OwlCarousel } from 'ngx-owl-carousel';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sponsoren-liste',
@@ -7,30 +6,6 @@ import { OwlCarousel } from 'ngx-owl-carousel';
   styleUrls: ['./sponsoren-liste.component.scss']
 })
 export class SponsorenListeComponent implements OnInit {
-
-  @ViewChild('owlElement') owlElement: OwlCarousel;
-
-  public sliderOptions = {
-    autoplay: true,
-    dots: true,
-    nav: false,
-    loop: true,
-    navigation: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 2
-      },
-      960: {
-        items: 4
-      },
-      1200: {
-        items: 6
-      }
-    }
-  };
 
   public sponsors: { title: string, imageUrl: string, url?: string }[] = [
     {
@@ -57,6 +32,26 @@ export class SponsorenListeComponent implements OnInit {
       title: 'DFB / Fussball.de',
       imageUrl: '/assets/images/sponsoren/dfb-fussballde.jpg',
       url: 'http://www.fussball.de'
+    },
+    {
+      title: 'Schröder Fleischwaren',
+      imageUrl: '/assets/images/sponsoren/Schroeder.png',
+      url: 'http://www.schroeder-fleischwaren.de'
+    },
+    {
+      title: 'Baugruppe Gross',
+      imageUrl: '/assets/images/sponsoren/PG_Logo.png',
+      url: 'https://gross-bau.de'
+    },
+    {
+      title: 'Bosch Car Service + Reisemobile Dörr',
+      imageUrl: '/assets/images/sponsoren/Doerr.png',
+      url: 'http://reisemobile-doerr.de/'
+    },
+    {
+      title: 'Volkswagen Autohaus Schmidt',
+      imageUrl: '/assets/images/sponsoren/Schmidt_GmbH_Logo.png',
+      url: 'http://reisemobile-doerr.de/'
     }
   ];
 

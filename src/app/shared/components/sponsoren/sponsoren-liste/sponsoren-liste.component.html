@@ -1,30 +1,38 @@
 <!-- Sponsoren -->
-<section id="sponsoren" class="subsection">
+<section id="sponsoren" class="subsection" style="padding-bottom: 0;padding-top: 0">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-10 col-lg-offset-1">
-        <h3><i class="fa fa-info"></i> Unsere Sponsoren</h3>
-        <p style="color: #2badd9;">Folgende Unternehmen haben bereits jetzt ihre Unterstützung bei unserem ehrgeizigen
-          Projekt zugesagt.</p>
-      </div>
 
+      <div class="col-12" style="background-color: #fff">
+        <div class="row">
 
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-offset-1 col-lg-10">
-        <div class="row" style="display: flex; background-color: #fff">
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 text-center"
-               *ngFor="let sponsor of sponsors | orderBy: ['title']; let first = first;">
+          <div class="col-xs-10 col-lg-offset-1">
+            <h3><i class="fa fa-info"></i> Unsere Sponsoren</h3>
+            <p class="text-black-50">
+              Folgende Unternehmen haben bereits jetzt ihre Unterstützung bei unserem ehrgeizigen
+              Projekt zugesagt.
+            </p>
+          </div>
 
-            <h5 class="text-black-50" style="border-bottom: 1px dotted #cecece; font-size: 0.75rem">{{sponsor.title}}</h5>
-            <a *ngIf="sponsor.url"
-               [href]="sponsor.url"
-               target="_blank">
-              <img
-                class="img img-fluid"
-                [src]="sponsor.imageUrl"
-                alt="{{sponsor.title}}"
-                title="{{sponsor.title}}">
-            </a>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-offset-1 col-lg-10">
+            <div class="row" style="display: flex;">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 mb-5 text-center"
+                   *ngFor="let sponsor of sponsors | orderBy: ['title']; let first = first;">
 
+                <h5 class="text-black-50"
+                    style="border-bottom: 1px dotted #cecece; font-size: 0.75rem">{{sponsor.title}}</h5>
+                <a *ngIf="sponsor.url"
+                   [href]="sponsor.url"
+                   target="_blank">
+                  <img
+                    class="img img-fluid"
+                    [src]="sponsor.imageUrl"
+                    alt="{{sponsor.title}}"
+                    title="{{sponsor.title}}">
+                </a>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>

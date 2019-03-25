@@ -37,7 +37,36 @@
         </a>
       </div>
     </div>
+
+    <div style="position:absolute; top:95vh; transform:translateY(-100%); width:100%;">
+      <div class="row">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-7">
+          <h3 class="hidden-xs" style="font-size: 1.3rem">Mit freundlicher Unterstützung von</h3>
+
+          <div class="grayscale">
+            <ng-container *ngFor="let sponsor of sponsors">
+              <a target="_blank" [href]="sponsor.url">
+                <img class="img-fluid sponsorsImg" [src]="sponsor.image"
+                     [alt]="sponsor.title"/>
+              </a>
+            </ng-container>
+          </div>
+
+          <!--<div class="row grayscale">
+            <div class="col-xs-4 pb-1 col-sm-3 col-md-2 col-lg-3" *ngFor="let sponsor of sponsors">
+              <a target="_blank" [href]="sponsor.url">
+                <img class="img-fluid sponsorsImg" [src]="sponsor.image"
+                     [alt]="sponsor.title"/>
+              </a>
+            </div>
+          </div>-->
+
+        </div>
+      </div>
+    </div>
+
   </div>
+
 
   <img alt="Logo" class="headerLogo hidden-xs" src="../../../../assets/images/logo.png"/>
 </header>
