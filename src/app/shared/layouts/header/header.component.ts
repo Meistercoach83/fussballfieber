@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       title: 'Bosch Car Service + Reisemobile Dörr',
-      image: '/assets/images/sponsoren/Doerr.png',
+      image: '/assets/images/sponsoren/Logo_Reisemobile_Doerr_Blau.jpg',
       url: 'http://reisemobile-doerr.de'
     },
     {
