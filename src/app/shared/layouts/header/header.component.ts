@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       title: 'Peter Groß Bau',
-      image: '/assets/images/sponsoren/PG_Logo.png',
+      image: '/assets/images/sponsoren/PG_Logo_rgb_weiss-02.png',
       url: 'https://gross-bau.de'
     },
     {
