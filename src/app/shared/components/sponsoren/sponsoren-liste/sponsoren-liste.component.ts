@@ -57,6 +57,16 @@ export class SponsorenListeComponent implements OnInit {
       title: 'Treuhand Saar',
       imageUrl: '/assets/images/sponsoren/THS.gif',
       url: 'https://www.treuhand-saar.de'
+    },
+    {
+      title: 'Unsere Volksbank EG St. Wendeler Land',
+      imageUrl: '/assets/images/sponsoren/volksbank.jpg',
+      url: 'https://www.unserevolksbank.de'
+    },
+    {
+      title: 'PROWIN',
+      imageUrl: '/assets/images/sponsoren/prowin.png',
+      url: 'https://www.prowin.net'
     }
   ];
 
