@@ -16,7 +16,7 @@ import { DeferLoadModule } from '@trademe/ng-defer-load';
 import { TranslateModule } from '@ngx-translate/core';
 import { SharedComponentsModule } from '@shared/components/shared-components.module';
 import { StartseiteNewsComponent } from './startseite-news/startseite-news.component';
-import { StartseiteGoldSponsorenComponent } from './startseite-gold-sponsoren/startseite-gold-sponsoren.component';
+// import { StartseiteGoldSponsorenComponent } from './startseite-gold-sponsoren/startseite-gold-sponsoren.component';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 
 @NgModule({
@@ -31,12 +31,12 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
     StartseiteNewsletterComponent,
     StartseiteStadionComponent,
     StartseiteNewsComponent,
-    StartseiteGoldSponsorenComponent,
+    // StartseiteGoldSponsorenComponent,
   ],
   imports: [
     CommonModule,
     DeferLoadModule,
-    NgPipesModule,
+    // NgPipesModule,
     PerfectScrollbarModule,
     RouterModule.forChild(startseiteRoutes),
     SharedComponentsModule,
