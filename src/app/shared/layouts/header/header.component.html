@@ -27,7 +27,7 @@
       </div>
 
       <div class="row">
-        <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-3 text-center">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-3 text-center mb-5">
           <a class="btn btn-primary btn-scroll floating-arrow"
              (click)="myScrollService.scrollTo({target: 'content'})"
              id="bottom">
@@ -38,9 +38,8 @@
       </div>
 
       <div class="row">
-        <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4"
-             style="position:absolute; top:95vh; transform:translateY(-100%); width:100%;">
-          <!--class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-3">-->
+        <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-6 col-lg-4 col-xl-4 mt-5">
+          <!--style="position:absolute; top:90vh; transform:translateY(-100%); width:100%;"-->
           <h3 class="hidden-xs" style="font-size: 1.3rem">Mit freundlicher Unterstützung von</h3>
           <div class="grayscale">
             <ng-container *ngFor="let sponsor of sponsors">
