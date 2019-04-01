@@ -37,6 +37,7 @@ import { NgPipesModule } from 'ngx-pipes';
   ],
   exports: [
     EventSozialesProjektComponent,
+    NgPipesModule,
     SpielKartenansichtComponent,
     SpielVorstellungComponent,
     SponsorenAnsprechpartnerComponent,

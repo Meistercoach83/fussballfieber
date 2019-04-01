@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartseiteNewsComponent implements OnInit {
 
-  constructor() { }
+  public config = {};
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
