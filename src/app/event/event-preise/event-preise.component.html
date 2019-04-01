@@ -6,8 +6,8 @@
         <table class="table table-hover table-sm">
           <tbody>
           <tr *ngFor="let drink of drinks">
-            <td>{{drink.title}}</td>
-            <td class="text-right">{{drink.price}} €</td>
+            <td class="text-white">{{drink.title}}</td>
+            <td class="text-right text-white">{{drink.price}} €</td>
           </tr>
           </tbody>
         </table>
@@ -16,8 +16,8 @@
         <table class="table table-hover table-sm">
           <tbody>
           <tr *ngFor="let food of foods">
-            <td>{{food.title}}</td>
-            <td class="text-right">{{food.price}} €</td>
+            <td class="text-white">{{food.title}}</td>
+            <td class="text-right text-white">{{food.price}} €</td>
           </tr>
           </tbody>
         </table>
@@ -31,9 +31,9 @@
           <tbody>
           <tr *ngFor="let special of specials | orderBy: ['type', 'sorting']"
               [ngClass]="special.cssClass + '' + special.sorting">
-            <td>{{special.title}}</td>
-            <td [innerHTML]="special.day"></td>
-            <td>{{special.price}} €</td>
+            <td class="text-white">{{special.title}}</td>
+            <td class="text-white" [innerHTML]="special.day"></td>
+            <td class="text-white">{{special.price}} €</td>
           </tr>
           </tbody>
         </table>
