@@ -24,4 +24,4 @@ install:
   - yarn
 
 script:
-  - npm run build:ci
+  - npm run srr
