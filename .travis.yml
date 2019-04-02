@@ -16,12 +16,17 @@ addons:
     packages:
       - g++-4.8
 
-before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH=$HOME/.yarn/bin:$PATH
+#before_install:
+#  - curl -o- -L https://yarnpkg.com/install.sh | bash
+#  - export PATH=$HOME/.yarn/bin:$PATH
 
 install:
   - npm install
 
 script:
-  - npm run ssr
+  - npm build --prod
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change
