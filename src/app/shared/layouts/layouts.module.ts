@@ -32,4 +32,5 @@ import { ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
     ScrollToService
   ]
 })
-export class LayoutsModule {}
+export class LayoutsModule {
+}
