@@ -21,7 +21,7 @@ before_install:
   - export PATH=$HOME/.yarn/bin:$PATH
 
 install:
-  - npm
+  - npm install
 
 script:
   - npm run srr
