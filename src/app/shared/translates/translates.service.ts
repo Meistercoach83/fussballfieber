@@ -107,13 +107,13 @@ export class TranslatesService {
 
 export class CommonMissingTranslationHandler implements MissingTranslationHandler {
   handle(params: MissingTranslationHandlerParams) {
-    if (
+    /* if (
       params.key.match(/\w+\.\w+/) &&
       params.translateService.translations['de'] &&
       !params.translateService.translations['de'][params.key]
     ) {
       console.warn(` => "${params.key}"`);
-    }
+    } */
     return params.key;
   }
 }

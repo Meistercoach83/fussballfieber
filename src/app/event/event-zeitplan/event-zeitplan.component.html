@@ -19,12 +19,8 @@
         <small *ngIf="event.title">{{event.title}}</small>
 
         <div class="row align-items-center d-flex" *ngFor="let subEvent of event.subEvents">
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <span class="timestamp mr-1">{{subEvent.time}} Uhr</span>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
-            <h4>{{subEvent.title}}</h4>
-          </div>
+          <span class="timestamp mr-1">{{subEvent.time}} Uhr</span>
+          <h4>{{subEvent.title}}</h4>
         </div>
       </div>
     </div>
