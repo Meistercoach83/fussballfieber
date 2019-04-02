@@ -48,6 +48,7 @@
     "@angular/pwa": "^0.13.7",
     "@angular/router": "7.2.11",
     "@angular/service-worker": "7.2.11",
+    "@fullcalendar/core": "^4.0.1",
     "@gorniv/ngx-transfer-http": "2.2.9",
     "@nguniversal/common": "^7.1.1",
     "@nguniversal/express-engine": "^7.1.1",
