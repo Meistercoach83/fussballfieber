@@ -1,5 +1,5 @@
 {
-  "name": "universal-demo",
+  "name": "fussballfieber2019.de",
   "version": "7.0.0",
   "license": "MIT",
   "scripts": {
@@ -45,7 +45,7 @@
     "@angular/http": "7.2.0",
     "@angular/platform-browser": "7.2.0",
     "@angular/platform-browser-dynamic": "7.2.0",
-    "@angular/pwa": "^0.12.4",
+    "@angular/pwa": "^0.13.7",
     "@angular/router": "7.2.0",
     "@angular/service-worker": "7.2.0",
     "@gorniv/ngx-transfer-http": "2.2.9",
@@ -93,7 +93,7 @@
     "cross-env": "5.2.0",
     "jasmine-core": "3.3.0",
     "jasmine-spec-reporter": "4.2.1",
-    "karma": "3.1.4",
+    "karma": "^4.0.1",
     "karma-chrome-launcher": "2.2.0",
     "karma-cli": "2.0.0",
     "karma-coverage-istanbul-reporter": "2.0.4",
