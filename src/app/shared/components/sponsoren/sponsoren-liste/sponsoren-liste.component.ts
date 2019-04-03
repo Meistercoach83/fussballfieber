@@ -39,13 +39,7 @@ export class SponsorenListeComponent implements OnInit {
       imageUrl: '/assets/images/sponsoren/Brennerei-Michel.jpg',
       url: 'http://www.brennerteam.de',
       type: 'Hours'
-    }, /*
-    {
-      title: 'DFB / Fussball.de',
-      imageUrl: '/assets/images/sponsoren/dfb-fussballde.jpg',
-      url: 'http://www.fussball.de',
-      type: 'Bronze'
-    },*/
+    },
     {
       title: 'Schröder Fleischwaren',
       imageUrl: '/assets/images/sponsoren/Schroeder.png',
@@ -72,7 +66,7 @@ export class SponsorenListeComponent implements OnInit {
     },
     {
       title: 'Volkswagen',
-      imageUrl: '/assets/images/sponsoren/Vw_logo.gif',
+      imageUrl: '/assets/images/sponsoren/volkswagen-logo.png',
       url: 'https://www.volkswagen.de',
       type: 'Platin'
     },

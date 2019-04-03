@@ -43,7 +43,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       title: 'Volkswagen',
-      image: '/assets/images/sponsoren/thumbs/Vw_logo.gif',
+      image: '/assets/images/sponsoren/thumbs/volkswagen-logo.png',
       url: 'https://www.volkswagen.de'
     },
     {

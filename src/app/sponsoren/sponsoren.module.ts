@@ -5,10 +5,12 @@ import { sponsorenRoutes } from './sponsoren.routing';
 import { OwlModule } from 'ngx-owl-carousel';
 import { SponsorenIndexComponent } from './sponsoren-index/sponsoren-index.component';
 import { SharedComponentsModule } from '../shared/components/shared-components.module';
+import { PartnerListComponent } from './partner-list/partner-list.component';
 
 @NgModule({
   declarations: [
-    SponsorenIndexComponent
+    SponsorenIndexComponent,
+    PartnerListComponent
   ],
   imports: [
     CommonModule,

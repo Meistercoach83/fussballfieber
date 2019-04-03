@@ -43,7 +43,8 @@ import { NgPipesModule } from 'ngx-pipes';
     SponsorenAnsprechpartnerComponent,
     SponsorenKontaktFormularComponent,
     SponsorenListeComponent,
-    SponsorenPreiseComponent
+    SponsorenPreiseComponent,
+    TranslateModule
   ],
   providers: [
     MyScrollServiceService

@@ -1,0 +1,31 @@
+<section id="partner" class="subsection"
+         style="padding-bottom: 0;padding-top: 0; margin-top: 5rem; background-color: #fff">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-lg-offset-1">
+        <h3 style="color: #ff6600">{{ 'sponsors.Partner'| translate }}</h3>
+      </div>
+
+      <div class="col-xs-12">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-5 text-center"
+               *ngFor="let sponsor of partners
+                     | orderBy: ['ordering']
+                     | orderBy: ['title']; let first = first;">
+            <h5 class="text-black-50"
+                style="border-bottom: 1px dotted #cecece; font-size: 0.75rem">{{sponsor.title}}</h5>
+            <a *ngIf="sponsor.url"
+               [href]="sponsor.url"
+               target="_blank">
+              <img
+                class="img img-fluid"
+                [src]="sponsor.imageUrl"
+                alt="{{sponsor.title}}"
+                title="{{sponsor.title}}">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
