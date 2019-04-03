@@ -61,13 +61,13 @@ export class SponsorenListeComponent implements OnInit {
     {
       title: 'Bosch Car Service + Reisemobile Dörr',
       imageUrl: '/assets/images/sponsoren/Doerr.png',
-      url: 'http://reisemobile-doerr.de/',
+      url: 'http://reisemobile-doerr.de',
       type: 'Gold'
     },
     {
       title: 'Volkswagen Autohaus Schmidt',
       imageUrl: '/assets/images/sponsoren/Schmidt_GmbH_Logo.png',
-      url: 'http://reisemobile-doerr.de/',
+      url: 'https://www.autohaus-schmidt-wnd.de',
       type: 'Platin'
     },
     {
