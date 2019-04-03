@@ -72,7 +72,7 @@ export class SponsorenListeComponent implements OnInit {
     },
     {
       title: 'Treuhand Saar',
-      imageUrl: '/assets/images/sponsoren/THS.gif',
+      imageUrl: '/assets/images/sponsoren/THS.jpg',
       url: 'https://www.treuhand-saar.de',
       type: 'Gold'
     },
