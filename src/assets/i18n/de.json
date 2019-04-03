@@ -13,6 +13,13 @@
     "sponsors": "Sponsoren",
     "contact": "Ansprechpartner"
   },
+  "sponsors": {
+    "Platin": "Platin",
+    "Gold": "Gold",
+    "Silver": "Silber",
+    "Bronze": "Bronze",
+    "Hours": "Spielstunden-Sponsoren"
+  },
   "header": {
     "title": "Fußballfieber",
     "date": "Vom 29.05. bis 05.06.2019",

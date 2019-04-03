@@ -14,8 +14,9 @@
 
 header {
   min-height: 100vh;
-  display: flex;
+  display: grid;
   align-items: center;
+  vertical-align: center;
   border-bottom: 2px solid #c0c0c0;
 }
 
@@ -24,8 +25,8 @@ h1.my-heading {
   opacity: .64;
   font-weight: bolder;
   letter-spacing: -.13rem;
-  font-size: 3.21rem;
-  line-height: 3.44rem;
+  font-size: 2.81rem;
+  line-height: 2.94rem;
   margin: 1.72rem 0 1.72rem 0;
 }
 
@@ -92,7 +93,7 @@ a {
 }
 
 .sponsorsImg {
-  max-height: 5vh;
+  max-height: 7vh;
   max-width: 40vw;
   padding-right: 1rem;
   padding-bottom: 1rem;

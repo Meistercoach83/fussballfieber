@@ -27,10 +27,30 @@ export class HeaderComponent implements OnInit {
       url: 'https://gross-bau.de'
     },
     {
+      title: 'Bechtle GmbH',
+      image: '/assets/images/sponsoren/thumbs/bechtle_logo_rgb.png',
+      url: 'https://www.bechtle.com'
+    },
+    {
       title: 'Treuhand Saar',
       image: '/assets/images/sponsoren/thumbs/THS.gif',
       url: 'https://www.treuhand-saar.de'
-    }
+    },
+    {
+      title: 'Schröder Fleischwaren',
+      image: '/assets/images/sponsoren/thumbs/Schroeder.png',
+      url: 'http://www.schroeder-fleischwaren.de'
+    },
+    {
+      title: 'Volkswagen',
+      image: '/assets/images/sponsoren/thumbs/Vw_logo.gif',
+      url: 'https://www.volkswagen.de'
+    },
+    {
+      title: 'Axis Communications AB',
+      image: '/assets/images/sponsoren/thumbs/axis_logo_color.jpg',
+      url: 'https://www.axis.com'
+    },
   ];
 
   constructor(public myScrollService: MyScrollServiceService) {

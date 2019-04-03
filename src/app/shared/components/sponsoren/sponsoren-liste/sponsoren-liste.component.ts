@@ -7,66 +7,104 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SponsorenListeComponent implements OnInit {
 
-  public sponsors: { title: string, imageUrl: string, url?: string }[] = [
+  public packages: string[] = [
+    'Platin',
+    'Gold',
+    'Silver',
+    'Bronze',
+    'Hours'
+  ];
+
+  public sponsors: { title: string, imageUrl: string, url?: string, type: string }[] = [
     {
       title: 'Coiffeur-Team Lieb',
       imageUrl: '/assets/images/sponsoren/lieb.png',
-      url: 'http://www.coiffeurteam-lieb.de'
+      url: 'http://www.coiffeurteam-lieb.de',
+      type: 'Bronze'
     },
     {
       title: 'Radio Schlagerparadies',
       imageUrl: '/assets/images/sponsoren/radioschlagerparadies.png',
-      url: 'https://www.schlagerparadies.de'
+      url: 'https://www.schlagerparadies.de',
+      type: 'Silver'
     },
     {
       title: 'Praxis für Ergotherapie Nadine Stiwitz',
       imageUrl: '/assets/images/sponsoren/ergotherapie-nadine-stiwitz.jpg',
-      url: 'http://www.ergo-wallhalben.de'
+      url: 'http://www.ergo-wallhalben.de',
+      type: 'Hours'
     },
     {
       title: 'Brennerei Michel',
       imageUrl: '/assets/images/sponsoren/Brennerei-Michel.jpg',
-      url: 'http://www.brennerteam.de'
-    },
+      url: 'http://www.brennerteam.de',
+      type: 'Hours'
+    }, /*
     {
       title: 'DFB / Fussball.de',
       imageUrl: '/assets/images/sponsoren/dfb-fussballde.jpg',
-      url: 'http://www.fussball.de'
-    },
+      url: 'http://www.fussball.de',
+      type: 'Bronze'
+    },*/
     {
       title: 'Schröder Fleischwaren',
       imageUrl: '/assets/images/sponsoren/Schroeder.png',
-      url: 'http://www.schroeder-fleischwaren.de'
+      url: 'http://www.schroeder-fleischwaren.de',
+      type: 'Gold'
     },
     {
       title: 'Baugruppe Gross',
       imageUrl: '/assets/images/sponsoren/PG_Logo.png',
-      url: 'https://gross-bau.de'
+      url: 'https://gross-bau.de',
+      type: 'Gold'
     },
     {
       title: 'Bosch Car Service + Reisemobile Dörr',
       imageUrl: '/assets/images/sponsoren/Doerr.png',
-      url: 'http://reisemobile-doerr.de/'
+      url: 'http://reisemobile-doerr.de/',
+      type: 'Gold'
     },
     {
       title: 'Volkswagen Autohaus Schmidt',
       imageUrl: '/assets/images/sponsoren/Schmidt_GmbH_Logo.png',
-      url: 'http://reisemobile-doerr.de/'
+      url: 'http://reisemobile-doerr.de/',
+      type: 'Platin'
+    },
+    {
+      title: 'Volkswagen',
+      imageUrl: '/assets/images/sponsoren/Vw_logo.gif',
+      url: 'https://www.volkswagen.de',
+      type: 'Platin'
     },
     {
       title: 'Treuhand Saar',
       imageUrl: '/assets/images/sponsoren/THS.gif',
-      url: 'https://www.treuhand-saar.de'
+      url: 'https://www.treuhand-saar.de',
+      type: 'Gold'
+    },
+    {
+      title: 'Axis Communications AB',
+      imageUrl: '/assets/images/sponsoren/axis_logo_color.jpg',
+      url: 'https://www.axis.com',
+      type: 'Gold'
+    },
+    {
+      title: 'Bechtle GmbH',
+      imageUrl: '/assets/images/sponsoren/bechtle_logo_rgb.png',
+      url: 'https://www.bechtle.com',
+      type: 'Gold'
     },
     {
       title: 'Unsere Volksbank EG St. Wendeler Land',
       imageUrl: '/assets/images/sponsoren/volksbank.jpg',
-      url: 'https://www.unserevolksbank.de'
+      url: 'https://www.unserevolksbank.de',
+      type: 'Silver'
     },
     {
       title: 'PROWIN',
       imageUrl: '/assets/images/sponsoren/prowin.png',
-      url: 'https://www.prowin.net'
+      url: 'https://www.prowin.net',
+      type: 'Bronze'
     }
   ];
 
