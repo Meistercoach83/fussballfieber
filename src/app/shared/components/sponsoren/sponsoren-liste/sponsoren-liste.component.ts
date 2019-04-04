@@ -47,6 +47,12 @@ export class SponsorenListeComponent implements OnInit {
       type: 'Gold'
     },
     {
+      title: 'Imperial Sportsbet',
+      imageUrl: '/assets/images/sponsoren/Imperial_Logo_Web_S.png',
+      url: 'https://imperial-sportsbet.com',
+      type: 'Gold'
+    },
+    {
       title: 'Baugruppe Gross',
       imageUrl: '/assets/images/sponsoren/PG_Logo.png',
       url: 'https://gross-bau.de',
