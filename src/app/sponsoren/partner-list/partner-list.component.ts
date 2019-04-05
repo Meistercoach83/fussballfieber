@@ -25,6 +25,18 @@ export class PartnerListComponent implements OnInit {
       imageUrl: '/assets/images/projekte/kinderkrebsstiftung.png',
       url: 'https://www.kinderkrebsstiftung.de',
       type: 'Partner'
+    },
+    {
+      title: 'Hochwald Foods GmbH',
+      imageUrl: '/assets/images/sponsoren/Hochwald_Nahrungsmittel-Werke_Logo.png',
+      url: 'http://www.hochwald.de/',
+      type: 'Partner'
+    },
+    {
+      title: 'Hoffmann Getränke',
+      imageUrl: '/assets/images/sponsoren/1782_Logo.png',
+      // url: 'http://www.hochwald.de/',
+      type: 'Partner'
     }
   ];
 
