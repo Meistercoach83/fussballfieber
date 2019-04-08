@@ -27,8 +27,8 @@ export class PartnerListComponent implements OnInit {
       type: 'Partner'
     },
     {
-      title: 'Hochwald Foods GmbH',
-      imageUrl: '/assets/images/sponsoren/Hochwald_Nahrungsmittel-Werke_Logo.png',
+      title: 'Hochwald',
+      imageUrl: '/assets/images/sponsoren/Hochwald-Logo.png',
       url: 'http://www.hochwald.de/',
       type: 'Partner'
     },
