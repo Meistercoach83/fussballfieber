@@ -96,7 +96,7 @@ export class SponsorenListeComponent implements OnInit {
     },
     {
       title: 'Unsere Volksbank EG St. Wendeler Land',
-      imageUrl: '/assets/images/sponsoren/volksbank.jpg',
+      imageUrl: '/assets/images/sponsoren/SWV_Logo_RGB.png',
       url: 'https://www.unserevolksbank.de',
       type: 'Silver'
     },
