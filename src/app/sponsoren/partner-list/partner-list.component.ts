@@ -29,13 +29,12 @@ export class PartnerListComponent implements OnInit {
     {
       title: 'Hochwald',
       imageUrl: '/assets/images/sponsoren/Hochwald-Logo.png',
-      url: 'http://www.hochwald.de/',
+      url: 'https://www.hochwald-sprudel.de',
       type: 'Partner'
     },
     {
       title: 'Hoffmann Getränke',
       imageUrl: '/assets/images/sponsoren/1782_Logo.png',
-      // url: 'http://www.hochwald.de/',
       type: 'Partner'
     }
   ];
