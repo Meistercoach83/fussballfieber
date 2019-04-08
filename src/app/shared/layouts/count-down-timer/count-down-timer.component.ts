@@ -75,7 +75,6 @@ export class CountDownTimerComponent implements OnInit, OnDestroy {
 
     const days = Math.floor(milisecDiff / 1000 / 60 / (60 * 24));
     const dateDiff = new Date(milisecDiff);
-    const dayString = (days) ? this.twoDigit(days) + ':' : '';
     const dayHours = days * 24;
 
     if (this.timeOnly) {
