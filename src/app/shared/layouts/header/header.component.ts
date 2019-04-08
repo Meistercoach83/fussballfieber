@@ -51,6 +51,11 @@ export class HeaderComponent implements OnInit {
       image: '/assets/images/sponsoren/thumbs/axis_logo_color.jpg',
       url: 'https://www.axis.com'
     },
+    {
+      title: 'Imperial Sportsbet',
+      image: '/assets/images/sponsoren/thumbs/Imperial_Logo_Web_S.png',
+      url: 'https://imperial-sportsbet.com'
+    },
   ];
 
   constructor(public myScrollService: MyScrollServiceService) {
