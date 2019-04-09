@@ -72,7 +72,7 @@ export class SpielerComponent implements OnInit {
       image: '/assets/images/spieler/sfw/gelzi.jpg',
       age: 21,
       club: 'SF Winterbach',
-      position: ''
+      position: 'Rechter Flügel'
     },
     {
       firstName: 'Christian',
