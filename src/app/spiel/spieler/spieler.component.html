@@ -3,34 +3,56 @@
 </script>
 
 <!-- Spieler -->
-<section id="spieler" class="subsection" style="border-bottom: 0">
+<section id="spieler" class="subsection">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-1">
-        <h3><i class="fa fa-user-circle-o"></i> Teilnehmende Spieler</h3>
-        <p>
-          Folgende Spieler wollen sich beim Weltrekordversuch 2019 im Guinessbuch der Rekorde verewigen:
-        </p>
-        <h4 class="pt-5"><img src="/assets/images/logo-sfw.gif" style="height: 3rem;margin-right: .5rem;"/> Sportfreunde Winterbach
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+        <h4 class="pt-5"><img src="/assets/images/logo-sfw.gif" style="height: 3rem;margin-right: .5rem;"/> Sportfreunde
+          Winterbach
         </h4>
+
+        <div class="content-box p-5">
+          <p style="text-align: left">
+            Die Sportfreunde Winterbach sind ein klassischer Mehrsparten Sportverein mit dem
+            Hauptaugenmerk auf Fußball. Die Ursprünge des Vereins reichen zurück bis ins Jahr 1913
+            wobei die dokumentierte Gründung im März 1927 erfolgte. Der heute seit 91 Jahren
+            bestehende Verein, besitzt momentan etwa 300 Mitglieder, die sich in drei Aktive
+            Herrenmannschaften, eine Damenmannschaft, zwei Altherrenmannschaften, etwa zehn
+            Jugendmannschaften sowie eine Sparte für Frauenturnen aufteilen.
+          </p>
+          <p>
+            Der Verein ist darüber hinaus noch als Ausrichter zahlreicher regelmäßiger Veranstaltungen
+            überregional bekannt. Hierzu zählen beispielsweise ein jährliches Dorfturnier (Ein Dorf spielt
+            Fußball), Jugendfußballschulen (unter anderem die Klaus-Fischer-Fußballschule), ein
+            jährliches Grumbeerfest (Kartoffelfest), die immer wiederkehrende Glühwein- und
+            Feuerzangenbowlenacht, die FIFA Konsolen Weltmeisterschaft u. v. m.
+          </p>
+          <p>
+            Mit der Wahl eines neuen extrem verjüngten Vorstands im Jahr 2016 erfolgte gleichzeitig
+            auch ein Umdenken was die jährlichen Veranstaltungen anbelangt und es wird seitdem
+            unermüdlich daran gearbeitet die Attraktivität des Vereins und des Ortes Winterbach weiter
+            zu steigern.
+          </p>
+        </div>
+        <h3 class="pt-5 mt-5"><i class="fa fa-user-circle-o"></i> Teilnehmende Spieler</h3>
       </div>
 
       <div class="col-md-12">
         <div id="carousel" class="carousel slide" data-ride="carousel">
+
           <div class="carousel-inner">
             <div class="carousel-item" *ngFor="let item of [0,1,2]; let first = first"
                  [ngClass]="first ? 'active' : ''">
               <div class="row">
                 <div class="col-lg-2 col-md-6 col-sm-6 pt-1"
                      *ngFor="let player of wtbPlayers | spielerFilter : item : 6">
-                  <div class="our-team">
-                    <div class="pic">
-                      <img [src]="player.image" alt="{{player.firstName}} {{player.lastName}}">
-                    </div>
-                    <div class="team-content py-5">
-                      <h3 class="title">{{player.firstName}} {{player.lastName}} ({{player.age}})</h3>
+                  <div class="our-team p-3 d-flex align-items-start flex-column h-100">
+                    <img src="{{player.image}}" class="rounded mb-auto mx-auto pb-3"
+                         alt="{{player.firstName}} {{player.lastName}}">
+                    <div class="team-content mx-auto w-100 px-2 text-center py-3">
+                      <span class="title">{{player.firstName}} {{player.lastName}} ({{player.age}})</span>
                       <span class="post">{{player.position}}</span>
-                      <span class="post">{{player.club}}</span>
+                      <span class="post mt-3">{{player.club}}</span>
                     </div>
                   </div>
                 </div>
@@ -43,36 +65,63 @@
             <li data-target="#carousel" data-slide-to="1">2</li>
             <li data-target="#carousel" data-slide-to="2">3</li>
           </ol>
+
         </div>
-
         <hr style="background-color: #fff; opacity: .7; width: 80%"/>
-
       </div>
 
 
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-1">
-        <h4><img src="/assets/images/logo-tgifec.png" style="height: 3rem;margin-right: .5rem;"/> &bdquo;Thank God it´s
-          Friday&rdquo; - Event Club</h4>
-        <p>Die Spielerliste ist in Arbeit ...</p>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+        <h4><img src="/assets/images/logo-tgifec.png" style="height: 3rem;margin-right: .5rem;"/>
+          &bdquo;Thank God it´s Friday&rdquo; - Event Club
+        </h4>
+
+        <div class="content-box p-5">
+          <p>
+            Mitte des Jahres 2017 wurde in Wallhalben ein neuer Verein gegründet. Der "Thank God It ́s
+            Friday - Event Club" hat sich zum Ziel gesetzt, das gesellschaftliche Miteinander zu fördern
+            und zu Zeiten von sozialen Netzwerken und generell permanent steigender Abhängigkeit
+            vom Internet den realen Kontakt wieder in den Vordergrund zu rücken. Satzungsgemäß
+            wurde der Zweck des Vereins der Herstellung, Pflege und Wahrung reeller, sozialer Kontakte
+            gewidmet.
+          </p>
+          <p>
+            Im Zuge dessen sind wir als Verein bemüht, das ein oder andere Event, das hoffentlich die
+            Allgemeinheit anspricht, auf die Beine zu stellen. In der noch jungen Vereinsgeschichte hat
+            der beim Vereinsregister Zweibrücken eingetragene TGIF-EC bereits die Organisation des
+            „Mühlen-Weihnachtsdorfes“ in Wallhalben, die Organisation und Durchführung eines
+            Knutfestes zu Beginn des Jahres und eines Mensch-ärgere-Dich-nicht-Turniers an Karfreitag
+            übernommen. Ein weiteres Großereignis, an dem wir organisatorisch beteiligt sind, ist das
+            Rockfestival "Thank God It ́s Firerock", das wir gemeinsam mit dem Förderkreis der
+            Freiwilligen Feuerwehr Wallhalben planen und durchführen.
+          </p>
+          <p>
+            Der noch wachsende Verein besteht aus interessierten Personen umliegender Gemeinden
+            und auch zeitgleich aus Mitgliedern des VfL Wallhalben, die bereits in den Jahren 2015 und
+            2016 federführend an der Organisation zweier Weltrekordversuche über das längste
+            Fußballspiel der Welt beteiligt waren.
+          </p>
+        </div>
+        <h3 class="pt-5 mt-5"><i class="fa fa-user-circle-o"></i> Teilnehmende Spieler</h3>
       </div>
 
 
       <div class="col-md-12">
 
-        <!--<div id="carousel2" class="carousel slide" data-ride="carousel">
+        <div id="carousel2" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item" *ngFor="let item of [0,1,2]; let first = first"
                  [ngClass]="first ? 'active' : ''">
               <div class="row">
-                <div class="col-lg-2 col-md-6 col-sm-6 pt-1" *ngFor="let player of tgifecPlayers | spielerFilter : item : 6">
-                  <div class="our-team">
-                    <div class="pic">
-                      <img [src]="player.image" alt="{{player.firstName}} {{player.lastName}}">
-                    </div>
-                    <div class="team-content">
-                      <h3 class="title">{{player.firstName}} {{player.lastName}}</h3>
+                <div class="col-lg-2 col-md-6 col-sm-6 pt-1"
+                     *ngFor="let player of wtbPlayers | spielerFilter : item : 6">
+                  <div class="our-team p-3 d-flex align-items-start flex-column h-100">
+                    <img src="{{player.image}}" class="rounded mb-auto mx-auto pb-3"
+                         alt="{{player.firstName}} {{player.lastName}}">
+                    <div class="team-content mx-auto w-100 px-2 text-center py-3">
+                      <span class="title">{{player.firstName}} {{player.lastName}} ({{player.age}})</span>
                       <span class="post">{{player.position}}</span>
-                      <span class="post">{{player.club}}</span>
+                      <span class="post mt-3">{{player.club}}</span>
                     </div>
                   </div>
                 </div>
@@ -85,13 +134,11 @@
             <li data-target="#carousel2" data-slide-to="1">2</li>
             <li data-target="#carousel2" data-slide-to="2">3</li>
           </ol>
-        </div>-->
-        <hr style="background-color: #fff; opacity: .7; width: 80%"/>
+        </div>
 
       </div>
 
     </div>
   </div>
-
 
 </section><!-- //Spieler-->

@@ -26,11 +26,11 @@ export const layoutsRoutes: Routes = [
         path: 'sponsoren',
         loadChildren: '../../sponsoren/sponsoren.module#SponsorenModule'
       },
-
+      /*
       {
         path: 'ansprechpartner',
         loadChildren: '../../ansprechpartner/ansprechpartner.module#AnsprechpartnerModule'
-      },
+      },*/
       {
         path: '**',
         redirectTo: 'startseite'

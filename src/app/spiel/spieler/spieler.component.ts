@@ -46,17 +46,17 @@ export class SpielerComponent implements OnInit {
       firstName: 'Andreas',
       lastName: 'Wagner',
       image: '/assets/images/spieler/sfw/andi.jpg',
-      age: 21,
-      club: 'SF Winterbach',
-      position: ''
+      age: 26,
+      club: 'SV Baltersweiler',
+      position: '-'
     },
     {
       firstName: 'Annika',
       lastName: 'Müller',
       image: '/assets/images/spieler/sfw/annika.jpg',
-      age: 21,
+      age: 28,
       club: 'SF Winterbach',
-      position: ''
+      position: 'Zentrales defensives Mittelfeld'
     },
     {
       firstName: 'Carsten',
@@ -78,9 +78,9 @@ export class SpielerComponent implements OnInit {
       firstName: 'Christian',
       lastName: 'Spengler',
       image: '/assets/images/spieler/sfw/chris.jpg',
-      age: 0,
+      age: 31,
       club: 'SF Winterbach',
-      position: ''
+      position: 'Zentrales defensives Mittelfeld'
     },
     {
       firstName: 'Dillon',
@@ -96,15 +96,15 @@ export class SpielerComponent implements OnInit {
       image: '/assets/images/spieler/sfw/baier.jpg',
       age: 21,
       club: 'SF Winterbach',
-      position: ''
+      position: 'Innenverteidiger / Rechter Verteidiger'
     },
     {
       firstName: 'Julian',
       lastName: 'Hoffmann',
       image: '/assets/images/spieler/sfw/julian.jpg',
-      age: 21,
-      club: 'SF Winterbach',
-      position: ''
+      age: 17,
+      club: 'JFG Marpingen',
+      position: 'Torwart'
     },
     {
       firstName: 'Kevin',
@@ -120,7 +120,7 @@ export class SpielerComponent implements OnInit {
       image: '/assets/images/spieler/sfw/lukas.jpg',
       age: 23,
       club: 'SF Winterbach',
-      position: ''
+      position: 'Linker Verteidiger'
     },
     {
       firstName: 'Manuel',
@@ -128,31 +128,31 @@ export class SpielerComponent implements OnInit {
       image: '/assets/images/spieler/sfw/manu.jpg',
       age: 23,
       club: 'SF Winterbach',
-      position: ''
+      position: 'Rechter Verteidiger'
     },
     {
       firstName: 'Max',
       lastName: 'Hoffmann',
       image: '/assets/images/spieler/sfw/max.jpg',
-      age: 23,
-      club: 'SF Winterbach',
-      position: ''
+      age: 17,
+      club: 'JFG Marpingen',
+      position: 'Zentrales offensives Mittelfeld'
     },
     {
       firstName: 'Niclas',
       lastName: 'Hanke',
       image: '/assets/images/spieler/sfw/niclas.jpg',
       age: 23,
-      club: '',
-      position: ''
+      club: 'vereinslos',
+      position: 'Zentrales offensives Mittelfeld'
     },
     {
       firstName: 'Ronny',
       lastName: 'Hassel',
       image: '/assets/images/spieler/sfw/ronny.jpg',
-      age: 36,
+      age: 37,
       club: 'SF Winterbach',
-      position: ''
+      position: 'Innenverteidiger'
     },
     {
       firstName: 'Simon',
@@ -160,15 +160,15 @@ export class SpielerComponent implements OnInit {
       image: '/assets/images/spieler/sfw/simon.jpg',
       age: 21,
       club: 'SF Winterbach',
-      position: ''
+      position: 'Rechter Verteidiger'
     },
     {
       firstName: 'Thomas',
       lastName: 'Weber',
       image: '/assets/images/spieler/sfw/thomas.jpg',
-      age: 0,
-      club: 'SF Winterbach',
-      position: ''
+      age: 28,
+      club: 'Fortuna Niederaltdorf',
+      position: 'Rechter Verteidiger'
     },
     {
       firstName: 'Tobias',
@@ -184,7 +184,7 @@ export class SpielerComponent implements OnInit {
       image: '/assets/images/spieler/sfw/jannik.jpg',
       age: 27,
       club: 'SF Winterbach',
-      position: ''
+      position: 'Innenverteidiger'
     }
   ];
 
