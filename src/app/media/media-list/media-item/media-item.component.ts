@@ -8,11 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 export class MediaItemComponent implements OnInit {
 
   @Input() item: any;
+  @Input() config: {
+    width: number,
+    height: number
+  };
 
   constructor() { }
 
   ngOnInit() {
-    // console.log(this.item);
   }
 
 }

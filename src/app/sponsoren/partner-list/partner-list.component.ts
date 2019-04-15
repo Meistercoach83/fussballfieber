@@ -40,6 +40,7 @@ export class PartnerListComponent implements OnInit {
     {
       title: 'S & L',
       imageUrl: '/assets/images/sponsoren/SUL_Logo_ZW.jpg',
+      url: 'https://www.sul.de',
       type: 'Partner'
     }
   ];
