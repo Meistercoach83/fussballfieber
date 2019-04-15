@@ -36,6 +36,11 @@ export class PartnerListComponent implements OnInit {
       title: 'Hoffmann Getränke',
       imageUrl: '/assets/images/sponsoren/1782_Logo.png',
       type: 'Partner'
+    },
+    {
+      title: 'S & L',
+      imageUrl: '/assets/images/sponsoren/SUL_Logo_ZW.jpg',
+      type: 'Partner'
     }
   ];
 
