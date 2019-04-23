@@ -55,7 +55,12 @@ export class HeaderComponent implements OnInit {
       title: 'Imperial Sportsbet',
       image: '/assets/images/sponsoren/thumbs/Imperial_Logo_Web_S.png',
       url: 'https://imperial-sportsbet.com'
-    },
+    } /*,
+    {
+      title: 'Layenberger',
+      image: '/assets/images/sponsoren/thumbs/layenberger_logo.png',
+      url: 'https://www.layenberger.com'
+    }, */
   ];
 
   constructor(public myScrollService: MyScrollServiceService) {

@@ -41,6 +41,12 @@ export class SponsorenListeComponent implements OnInit {
       type: 'Hours'
     },
     {
+      title: 'Braufabrik.de',
+      imageUrl: '/assets/images/sponsoren/braufabrik.jpg',
+      url: 'http://www.braufabrik.de',
+      type: 'Hours'
+    },
+    {
       title: 'Schröder Fleischwaren',
       imageUrl: '/assets/images/sponsoren/Schroeder.png',
       url: 'http://www.schroeder-fleischwaren.de',
@@ -105,7 +111,19 @@ export class SponsorenListeComponent implements OnInit {
       imageUrl: '/assets/images/sponsoren/prowin.png',
       url: 'https://www.prowin.net',
       type: 'Bronze'
-    }
+    },
+    {
+      title: 'Württembergische - Generalagentur Woll & Contier-Woll',
+      imageUrl: '/assets/images/sponsoren/wurttembergische.jpg',
+      url: 'https://www.wuerttembergische.de/versicherungen/david.woll',
+      type: 'Bronze'
+    }, /*
+    {
+      title: 'Layenberger',
+      imageUrl: '/assets/images/sponsoren/layenberger_logo.png',
+      url: 'https://www.layenberger.com',
+      type: 'Gold'
+    },*/
   ];
 
   constructor() {

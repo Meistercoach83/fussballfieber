@@ -42,6 +42,12 @@ export class PartnerListComponent implements OnInit {
       imageUrl: '/assets/images/sponsoren/SUL_Logo_ZW.jpg',
       url: 'https://www.sul.de',
       type: 'Partner'
+    },
+    {
+      title: 'Sporthaus Glaab',
+      imageUrl: '/assets/images/sponsoren/glaab.png',
+      url: 'http://sporthaus-glaab.de/',
+      type: 'Partner'
     }
   ];
 
