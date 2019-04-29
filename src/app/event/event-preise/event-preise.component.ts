@@ -14,11 +14,11 @@ export class EventPreiseComponent implements OnInit {
     },
     {
       title: 'IsoFit',
-      price: '1,80'
+      price: '2,00'
     },
     {
       title: '(alkoholfreies) Bier und Radler, Mixery, Malzbier, Gründel´s Fresh',
-      price: '1,80'
+      price: '2,00'
     },
     {
       title: 'Kaffee',
@@ -26,18 +26,18 @@ export class EventPreiseComponent implements OnInit {
     },
     {
       title: 'Weizenbier',
-      price: '2,80'
+      price: '3,00'
     }
   ];
 
   public foods: { title: string, price: string }[] = [
     {
       title: 'Rostwurst mit halbem Weck',
-      price: '2,00'
+      price: '2,50'
     },
     {
       title: 'Rostwurst mit ganzem Weck',
-      price: '2,20'
+      price: '2,80'
     },
     {
       title: 'Currywurst',

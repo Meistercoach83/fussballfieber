@@ -99,11 +99,11 @@ export class EventZeitplanComponent implements OnInit {
         {
           time: '12:00',
           title: 'Mittagessen',
-        },
+        }/*,
         {
           time: '13:00',
           title: 'Glücksrad vom Jugendförderverein'
-        },
+        }*/,
         {
           time: '14:00',
           title: 'Typisierungsaktion / Blutspende',
@@ -126,7 +126,7 @@ export class EventZeitplanComponent implements OnInit {
               Rührei mit Speck 3 € (bis 10.30 Uhr`
         }
       ]
-    },
+    }/*,
     {
       dateTime: '',
       dayNumber: '04',
@@ -138,7 +138,7 @@ export class EventZeitplanComponent implements OnInit {
           description: `mit Maßbier, Brezeln und viel Gaudi`
         }
       ]
-    },
+    }*/,
     {
       dateTime: '',
       dayNumber: '05',
@@ -152,7 +152,8 @@ export class EventZeitplanComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
