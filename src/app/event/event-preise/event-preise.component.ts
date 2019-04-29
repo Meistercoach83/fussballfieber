@@ -41,7 +41,7 @@ export class EventPreiseComponent implements OnInit {
     },
     {
       title: 'Currywurst',
-      price: '2,50'
+      price: '3,00'
     },
     {
       title: 'Pommes Frites',
@@ -49,16 +49,16 @@ export class EventPreiseComponent implements OnInit {
     },
     {
       title: 'Currywurst mit Pommes Frites',
-      price: '3,50'
+      price: '4,50'
     },
     {
       title: 'Schwenkbraten mit halbem Weck',
-      price: '3,00'
+      price: '3,50'
     },
     {
       title: 'Saumagen mit halbem Weck',
       price: '2,00'
-    },
+    }
   ];
 
   public specials: { title: string, day: string, price: string, type: string, sorting: number, cssClass: string }[] = [
