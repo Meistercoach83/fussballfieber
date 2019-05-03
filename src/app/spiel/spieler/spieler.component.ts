@@ -190,127 +190,141 @@ export class SpielerComponent implements OnInit {
 
   public tgifecPlayers: IPlayer[] = [
     {
-      firstName: '',
-      lastName: '',
+      firstName: 'Sven',
+      lastName: 'Rothmeier',
+      image: '',
+      age: 38,
+      club: '',
+      position: ''
+    }, {
+      firstName: 'Benjamin',
+      lastName: 'Gruner',
+      image: '',
+      age: 33,
+      club: '',
+      position: ''
+    }, {
+      firstName: 'Kevin',
+      lastName: 'Eicher',
       image: '',
       age: 21,
       club: '',
       position: ''
     }, {
-      firstName: '',
-      lastName: '',
+      firstName: 'Erik',
+      lastName: 'Börgers',
+      image: '',
+      age: 28,
+      club: '',
+      position: ''
+    }, {
+      firstName: 'Mike',
+      lastName: 'Karll',
       image: '',
       age: 21,
       club: '',
       position: ''
     }, {
-      firstName: '',
-      lastName: '',
+      firstName: 'Thore',
+      lastName: 'Marhöfer',
+      image: '',
+      age: 29,
+      club: '',
+      position: ''
+    }, {
+      firstName: 'Benjamin',
+      lastName: 'Janek',
       image: '',
       age: 21,
       club: '',
       position: ''
     }, {
-      firstName: '',
-      lastName: '',
+      firstName: 'Lasse',
+      lastName: 'Thomas',
+      image: '',
+      age: 24,
+      club: '',
+      position: ''
+    }, {
+      firstName: 'Tobias',
+      lastName: 'Utzig',
+      image: '',
+      age: 27,
+      club: '',
+      position: ''
+    }, {
+      firstName: 'Manuel',
+      lastName: 'Schütt',
+      image: '',
+      age: 32,
+      club: '',
+      position: ''
+    }, {
+      firstName: 'Andre',
+      lastName: 'Busch',
       image: '',
       age: 21,
       club: '',
       position: ''
     }, {
-      firstName: '',
-      lastName: '',
+      firstName: 'Julien',
+      lastName: 'Lehmann',
       image: '',
       age: 21,
       club: '',
       position: ''
     }, {
-      firstName: '',
-      lastName: '',
+      firstName: 'Dirk',
+      lastName: 'Stiwitz',
+      image: '',
+      age: 48,
+      club: '',
+      position: ''
+    }, {
+      firstName: 'Corey',
+      lastName: 'Caperton',
+      image: '',
+      age: 30,
+      club: '',
+      position: ''
+    }, {
+      firstName: 'Nico',
+      lastName: 'Deckarm',
       image: '',
       age: 21,
       club: '',
       position: ''
     }, {
-      firstName: '',
-      lastName: '',
+      firstName: 'Thorsten',
+      lastName: 'Hilse',
+      image: '',
+      age: 32,
+      club: '',
+      position: ''
+    }, {
+      firstName: 'Waldemar',
+      lastName: 'Röhrich',
+      image: '',
+      age: 27,
+      club: '',
+      position: ''
+    }, {
+      firstName: 'Tobias',
+      lastName: 'Schuler',
       image: '',
       age: 21,
       club: '',
       position: ''
     }, {
-      firstName: '',
-      lastName: '',
+      firstName: 'Timo',
+      lastName: 'Harth',
       image: '',
-      age: 21,
+      age: 30,
       club: '',
       position: ''
     }, {
-      firstName: '',
-      lastName: '',
-      image: '',
-      age: 21,
-      club: '',
-      position: ''
-    }, {
-      firstName: '',
-      lastName: '',
-      image: '',
-      age: 21,
-      club: '',
-      position: ''
-    }, {
-      firstName: '',
-      lastName: '',
-      image: '',
-      age: 21,
-      club: '',
-      position: ''
-    }, {
-      firstName: '',
-      lastName: '',
-      image: '',
-      age: 21,
-      club: '',
-      position: ''
-    }, {
-      firstName: '',
-      lastName: '',
-      image: '',
-      age: 21,
-      club: '',
-      position: ''
-    }, {
-      firstName: '',
-      lastName: '',
-      image: '',
-      age: 21,
-      club: '',
-      position: ''
-    }, {
-      firstName: '',
-      lastName: '',
-      image: '',
-      age: 21,
-      club: '',
-      position: ''
-    }, {
-      firstName: '',
-      lastName: '',
-      image: '',
-      age: 21,
-      club: '',
-      position: ''
-    }, {
-      firstName: '',
-      lastName: '',
-      image: '',
-      age: 21,
-      club: '',
-      position: ''
-    }, {
-      firstName: '',
-      lastName: '',
+      firstName: 'Martin',
+      lastName: 'Zürker',
       image: '',
       age: 21,
       club: '',
