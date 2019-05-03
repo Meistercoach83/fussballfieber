@@ -270,7 +270,7 @@ export class SpielerComponent implements OnInit {
       firstName: 'Julien',
       lastName: 'Lehmann',
       image: '',
-      age: 21,
+      age: 27,
       club: '',
       position: ''
     }, {
