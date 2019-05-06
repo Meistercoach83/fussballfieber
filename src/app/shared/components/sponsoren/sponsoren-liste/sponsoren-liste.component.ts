@@ -47,6 +47,12 @@ export class SponsorenListeComponent implements OnInit {
       type: 'Hours'
     },
     {
+      title: 'Elektrobau Marpingen',
+      imageUrl: '/assets/images/sponsoren/ebm.jpg',
+      url: 'https://www.elektrobau-marpingen.de',
+      type: 'Hours'
+    },
+    {
       title: 'Schröder Fleischwaren',
       imageUrl: '/assets/images/sponsoren/Schroeder.png',
       url: 'http://www.schroeder-fleischwaren.de',
@@ -128,6 +134,12 @@ export class SponsorenListeComponent implements OnInit {
       title: 'OrgaSoft Kommunal',
       imageUrl: '/assets/images/sponsoren/osklogo_ohne_2.jpg',
       url: 'http://o-s-k.de',
+      type: 'Bronze'
+    },
+    {
+      title: 'REWE - Dein Markt',
+      imageUrl: '/assets/images/sponsoren/thumbs/rewe.png',
+      url: 'https://www.rewe.de',
       type: 'Bronze'
     },
   ];
