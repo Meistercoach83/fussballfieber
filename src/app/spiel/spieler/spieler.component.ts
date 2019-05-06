@@ -43,12 +43,12 @@ export class SpielerComponent implements OnInit {
 
   public wtbPlayers: IPlayer[] = [
     {
-      firstName: 'Andreas',
-      lastName: 'Wagner',
-      image: '/assets/images/spieler/sfw/andi.jpg',
-      age: 26,
-      club: 'SV Baltersweiler',
-      position: '-'
+      firstName: 'Maurice',
+      lastName: 'Flickinger',
+      image: '/assets/images/spieler/sfw/maurice.jpg',
+      age: 25,
+      club: '?',
+      position: '?'
     },
     {
       firstName: 'Annika',
@@ -174,7 +174,7 @@ export class SpielerComponent implements OnInit {
       firstName: 'Tobias',
       lastName: 'Jennewein',
       image: '/assets/images/spieler/sfw/tobi.jpg',
-      age: 0,
+      age: 22,
       club: 'SF Winterbach',
       position: ''
     },
@@ -207,7 +207,7 @@ export class SpielerComponent implements OnInit {
       firstName: 'Kevin',
       lastName: 'Eicher',
       image: '',
-      age: 21,
+      age: 30,
       club: '',
       position: ''
     }, {
@@ -221,7 +221,7 @@ export class SpielerComponent implements OnInit {
       firstName: 'Mike',
       lastName: 'Karll',
       image: '',
-      age: 21,
+      age: 34,
       club: '',
       position: ''
     }, {
@@ -235,7 +235,7 @@ export class SpielerComponent implements OnInit {
       firstName: 'Benjamin',
       lastName: 'Janek',
       image: '',
-      age: 21,
+      age: 26,
       club: '',
       position: ''
     }, {
@@ -263,7 +263,7 @@ export class SpielerComponent implements OnInit {
       firstName: 'Andre',
       lastName: 'Busch',
       image: '',
-      age: 21,
+      age: 32,
       club: '',
       position: ''
     }, {
@@ -291,7 +291,7 @@ export class SpielerComponent implements OnInit {
       firstName: 'Nico',
       lastName: 'Deckarm',
       image: '',
-      age: 21,
+      age: 19,
       club: '',
       position: ''
     }, {
@@ -312,7 +312,7 @@ export class SpielerComponent implements OnInit {
       firstName: 'Tobias',
       lastName: 'Schuler',
       image: '',
-      age: 21,
+      age: 22,
       club: '',
       position: ''
     }, {
@@ -326,7 +326,7 @@ export class SpielerComponent implements OnInit {
       firstName: 'Martin',
       lastName: 'Zürker',
       image: '',
-      age: 21,
+      age: 29,
       club: '',
       position: ''
     },

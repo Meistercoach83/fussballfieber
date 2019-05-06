@@ -18,39 +18,18 @@
 
 .our-team .title {
   font-weight: bold;
-  color: #ff6600;
-  // letter-spacing: 1px;
+  color: #fff;
+  font-size: .8rem;
 }
 .our-team .post {
   display: block;
   font-weight: 700;
+  font-size: .8rem;
 }
 
 @media only screen and (max-width: 990px) {
   .our-team {
     margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
 }
-
-.carousel-indicators {
-  margin-top: 2rem;
-  position: relative;
-}
-
-.carousel-indicators li {
-  background-color: #fff !important;
-  border: 2px solid #fff;
-  text-indent: unset;
-  height: auto;
-  text-align: center;
-  color: #ff6600;
-  opacity: 1;
-}
-
-.carousel-indicators .active {
-  border: 2px solid #ff6600;
-  font-weight: bold;
-}
-
-
-

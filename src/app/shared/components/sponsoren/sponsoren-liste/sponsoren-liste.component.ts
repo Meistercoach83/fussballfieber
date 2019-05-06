@@ -117,13 +117,19 @@ export class SponsorenListeComponent implements OnInit {
       imageUrl: '/assets/images/sponsoren/wurttembergische.jpg',
       url: 'https://www.wuerttembergische.de/versicherungen/david.woll',
       type: 'Bronze'
-    }, /*
+    },
     {
-      title: 'Layenberger',
-      imageUrl: '/assets/images/sponsoren/layenberger_logo.png',
-      url: 'https://www.layenberger.com',
-      type: 'Gold'
-    },*/
+      title: 'ELEMENTS Badausstellung',
+      imageUrl: '/assets/images/sponsoren/elements-logo-Schwarz_HOCHFORMAT.jpg',
+      url: 'https://www.elements-show.de',
+      type: 'Bronze'
+    },
+    {
+      title: 'OrgaSoft Kommunal',
+      imageUrl: '/assets/images/sponsoren/osklogo_ohne_2.jpg',
+      url: 'http://o-s-k.de',
+      type: 'Bronze'
+    },
   ];
 
   constructor() {

@@ -1,8 +1,8 @@
-<script>
+<!--<script>
   $('.carousel').carousel({
 
   });
-</script>
+</script>-->
 
 <!-- Spieler -->
 <section id="spieler" class="subsection">
@@ -39,39 +39,24 @@
         <h3 class="pt-5 mt-5"><i class="fa fa-user-circle-o"></i> Teilnehmende Spieler</h3>
       </div>
 
-      <div class="col-md-12">
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-
-          <div class="carousel-inner">
-            <div class="carousel-item" *ngFor="let item of [0,1,2]; let first = first"
-                 [ngClass]="first ? 'active' : ''">
-              <div class="row">
-                <div class="col-lg-2 col-md-6 col-sm-6 pt-1"
-                     *ngFor="let player of wtbPlayers | spielerFilter : item : 6">
-                  <div class="our-team p-3 d-flex align-items-start flex-column h-100">
-                    <img src="{{player.image}}" class="rounded mb-auto mx-auto pb-3"
-                         alt="{{player.firstName}} {{player.lastName}}">
-                    <div class="team-content mx-auto w-100 px-2 text-center py-3">
-                      <span class="title">{{player.firstName}} {{player.lastName}} ({{player.age}})</span>
-                      <span class="post">{{player.position}}</span>
-                      <span class="post mt-3">{{player.club}}</span>
-                    </div>
-                  </div>
-                </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+        <div class="row">
+          <div class="col-lg-2 col-md-6 col-sm-6 pt-4"
+               *ngFor="let player of wtbPlayers">
+            <div class="our-team p-3 d-flex align-items-start flex-column h-100">
+              <img src="{{player.image}}" class="rounded mb-auto mx-auto pb-3"
+                   alt="{{player.firstName}} {{player.lastName}}">
+              <div class="team-content mx-auto w-100 px-2 text-center py-3">
+                <span class="title">{{player.firstName}} {{player.lastName}} ({{player.age}})</span>
+                <!--<span class="post">{{player.position}}</span>
+                <span class="post mt-1">{{player.club}}</span>-->
               </div>
             </div>
           </div>
 
-          <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active">1</li>
-            <li data-target="#carousel" data-slide-to="1">2</li>
-            <li data-target="#carousel" data-slide-to="2">3</li>
-          </ol>
-
         </div>
         <hr style="background-color: #fff; opacity: .7; width: 80%"/>
       </div>
-
 
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
         <h4><img src="/assets/images/logo-tgifec.png" style="height: 3rem;margin-right: .5rem;"/>
@@ -107,37 +92,20 @@
         <h3 class="pt-5 mt-5"><i class="fa fa-user-circle-o"></i> Teilnehmende Spieler</h3>
       </div>
 
-
-      <div class="col-md-12">
-
-        <div id="carousel2" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item" *ngFor="let item of [0,1,2]; let first = first"
-                 [ngClass]="first ? 'active' : ''">
-              <div class="row">
-                <div class="col-lg-2 col-md-6 col-sm-6 pt-1"
-                     *ngFor="let player of tgifecPlayers| spielerFilter : item : 6">
-                  <div class="our-team p-3 d-flex align-items-start flex-column h-100">
-                    <img src="{{player.image}}" class="rounded mb-auto mx-auto pb-3"
-                         alt="{{player.firstName}} {{player.lastName}}">
-                    <div class="team-content mx-auto w-100 px-2 text-center py-3">
-                      <span class="title">{{player.firstName}} {{player.lastName}} ({{player.age}})</span>
-                      <span class="post">{{player.position}}</span>
-                      <span class="post mt-3">{{player.club}}</span>
-                    </div>
-                  </div>
-                </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+        <div class="row">
+          <div class="col-lg-2 col-md-6 col-sm-6 pt-4" *ngFor="let player of tgifecPlayers">
+            <div class="our-team p-3 d-flex align-items-start flex-column h-100">
+              <img src="{{player.image}}" class="rounded mb-auto mx-auto pb-3"
+                   alt="{{player.firstName}} {{player.lastName}}">
+              <div class="team-content mx-auto w-100 px-2 text-center py-3">
+                <span class="title">{{player.firstName}} {{player.lastName}} ({{player.age}})</span>
+                <!--<span class="post">{{player.position}}</span>
+                <span class="post mt-1">{{player.club}}</span>-->
               </div>
             </div>
           </div>
-
-          <ol class="carousel-indicators">
-            <li data-target="#carousel2" data-slide-to="0" class="active">1</li>
-            <li data-target="#carousel2" data-slide-to="1">2</li>
-            <li data-target="#carousel2" data-slide-to="2">3</li>
-          </ol>
         </div>
-
       </div>
 
     </div>
