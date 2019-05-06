@@ -8,11 +8,10 @@ import { AppModule } from './app.module';
 import { InlineStyleComponent } from './inline-style/inline-style.component';
 import { InlineStyleModule } from './inline-style/inline-style.module';
 import { CookieBackendService, CookieService } from 'ngx-cookie';
-import { ServiceWorkerModuleMock } from './shared/services/service-worker.mock.module';
+import { ServiceWorkerModuleMock } from '@shared/services/service-worker.mock.module';
 
 @NgModule({
   imports: [
-    // AppModule - FIRST!!!
     AppModule,
     ServerModule,
     NoopAnimationsModule,

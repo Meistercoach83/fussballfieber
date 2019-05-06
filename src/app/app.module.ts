@@ -12,6 +12,8 @@ import { AppComponent } from './app.component';
 import { UniversalStorage } from '@shared/storage/universal.storage';
 import { GalleryModule } from '@ngx-gallery/core';
 import { LightboxModule } from '@ngx-gallery/lightbox';
+import { environment } from '../environments/environment';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 export function initLanguage(translateService: TranslatesService): Function {
   return (): Promise<any> => translateService.initLanguage();
@@ -28,7 +30,8 @@ export function initLanguage(translateService: TranslatesService): Function {
     CookieModule.forRoot(),
     SharedModule.forRoot(),
     GalleryModule,
-    LightboxModule
+    LightboxModule,
+    environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : [],
   ],
   declarations: [AppComponent],
   providers: [
