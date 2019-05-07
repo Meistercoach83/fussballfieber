@@ -48,7 +48,7 @@ export class SponsorenListeComponent implements OnInit {
     },
     {
       title: 'Elektrobau Marpingen',
-      imageUrl: '/assets/images/sponsoren/ebm.jpg',
+      imageUrl: '/assets/images/sponsoren/ebm.png',
       url: 'https://www.elektrobau-marpingen.de',
       type: 'Hours'
     },
