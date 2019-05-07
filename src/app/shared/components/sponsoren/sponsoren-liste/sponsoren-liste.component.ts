@@ -132,7 +132,7 @@ export class SponsorenListeComponent implements OnInit {
     },
     {
       title: 'OrgaSoft Kommunal',
-      imageUrl: '/assets/images/sponsoren/osklogo_ohne_2.jpg',
+      imageUrl: '/assets/images/sponsoren/osklogo_rgb.png',
       url: 'http://o-s-k.de',
       type: 'Bronze'
     },
