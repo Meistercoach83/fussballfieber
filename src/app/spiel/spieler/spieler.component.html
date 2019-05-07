@@ -1,8 +1,3 @@
-<!--<script>
-  $('.carousel').carousel({
-
-  });
-</script>-->
 
 <!-- Spieler -->
 <section id="spieler" class="subsection">
@@ -42,9 +37,14 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
         <div class="row">
           <div class="col-lg-2 col-md-6 col-sm-6 pt-4"
-               *ngFor="let player of wtbPlayers">
-            <div class="our-team p-3 d-flex align-items-start flex-column h-100">
-              <img src="{{player.image}}" class="rounded mb-auto mx-auto pb-3"
+               *ngFor="let player of wtbPlayers | orderBy: ['number']">
+            <div class="our-team p-3 d-flex align-items-start flex-column h-100 item">
+              <span class="notify-badge" *ngIf="player.number">
+                # {{player.number}}
+              </span>
+              <img *ngIf="player.image"
+                   src="{{player.image}}"
+                   class="rounded mb-auto mx-auto pb-5"
                    alt="{{player.firstName}} {{player.lastName}}">
               <div class="team-content mx-auto w-100 px-2 text-center py-3">
                 <span class="title">{{player.firstName}} {{player.lastName}} ({{player.age}})</span>
@@ -95,15 +95,15 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
         <div class="row">
           <div class="col-lg-2 col-md-6 col-sm-6 pt-4" *ngFor="let player of tgifecPlayers">
-            <div class="our-team p-3 d-flex align-items-start flex-column h-100">
-              <img src="{{player.image}}" class="rounded mb-auto mx-auto pb-3"
+            <!--<div class="our-team p-3 d-flex align-items-start flex-column h-100">-->
+              <img src="{{player.image}}" class="img-fluid rounded mb-3"
                    alt="{{player.firstName}} {{player.lastName}}">
-              <div class="team-content mx-auto w-100 px-2 text-center py-3">
+              <!--<div class="team-content mx-auto w-100 px-2 text-center py-3">
                 <span class="title">{{player.firstName}} {{player.lastName}} ({{player.age}})</span>
-                <!--<span class="post">{{player.position}}</span>
-                <span class="post mt-1">{{player.club}}</span>-->
+                <span class="post">{{player.position}}</span>
+                <span class="post mt-1">{{player.club}}</span>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
       </div>

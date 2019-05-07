@@ -11,6 +11,7 @@ import { SpielerComponent } from './spieler/spieler.component'; import { OwlModu
 import { SpielTimeLineComponent } from './spiel-time-line/spiel-time-line.component';
 import { ExtendedModule } from '@angular/flex-layout';
 import { SpielerFilterPipe } from './spieler-filter.pipe';
+import { NgPipesModule } from 'ngx-pipes';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SpielerFilterPipe } from './spieler-filter.pipe';
     CommonModule,
     RouterModule.forChild(spielRoutes),
     OwlModule,
-    ExtendedModule
+    ExtendedModule,
+    NgPipesModule
   ]
 })
 export class SpielModule { }
