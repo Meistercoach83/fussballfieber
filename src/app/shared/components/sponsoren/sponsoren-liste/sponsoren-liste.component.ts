@@ -17,6 +17,12 @@ export class SponsorenListeComponent implements OnInit {
 
   public sponsors: { title: string, imageUrl: string, url?: string, type: string }[] = [
     {
+      title: 'Gries + Co. GmbH CNC Zerspannungstechnik',
+      imageUrl: '/assets/images/sponsoren/thumbs/gries.jpg',
+      url: 'https://www.dreherei-gries.de',
+      type: 'Bronze'
+    },
+    {
       title: 'Coiffeur-Team Lieb',
       imageUrl: '/assets/images/sponsoren/lieb.png',
       url: 'http://www.coiffeurteam-lieb.de',
