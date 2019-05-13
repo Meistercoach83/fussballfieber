@@ -41,7 +41,7 @@ export class SpielerComponent implements OnInit {
       firstName: 'Carsten',
       lastName: 'Rauber',
       image: '/assets/images/spieler/sfw/carsten.jpg',
-      age: 21,
+      age: 22,
       club: 'SF Winterbach',
       position: '',
       number: 12
@@ -68,7 +68,7 @@ export class SpielerComponent implements OnInit {
       firstName: 'Dillon',
       lastName: 'Schug',
       image: '/assets/images/spieler/sfw/dillon.jpg',
-      age: 21,
+      age: 24,
       club: 'SF Winterbach',
       position: '',
       number: 11
@@ -95,7 +95,7 @@ export class SpielerComponent implements OnInit {
       firstName: 'Kevin',
       lastName: 'Spengler',
       image: '/assets/images/spieler/sfw/kevin.jpg',
-      age: 23,
+      age: 25,
       club: 'SF Winterbach',
       position: '',
       number: 17
@@ -131,7 +131,7 @@ export class SpielerComponent implements OnInit {
       firstName: 'Niclas',
       lastName: 'Hanke',
       image: '/assets/images/spieler/sfw/niclas.jpg',
-      age: 23,
+      age: 29,
       club: 'vereinslos',
       position: 'Zentrales offensives Mittelfeld',
       number: 8
