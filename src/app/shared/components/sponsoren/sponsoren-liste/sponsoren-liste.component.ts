@@ -59,6 +59,12 @@ export class SponsorenListeComponent implements OnInit {
       type: 'Hours'
     },
     {
+      title: 'Illtal Industriegase',
+      imageUrl: '/assets/images/sponsoren/thumbs/Illtal_3.jpg',
+      url: 'https://www.illtal-gas.de',
+      type: 'Hours'
+    },
+    {
       title: 'Schröder Fleischwaren',
       imageUrl: '/assets/images/sponsoren/Schroeder.png',
       url: 'http://www.schroeder-fleischwaren.de',
@@ -126,7 +132,7 @@ export class SponsorenListeComponent implements OnInit {
     },
     {
       title: 'Württembergische - Generalagentur Woll & Contier-Woll',
-      imageUrl: '/assets/images/sponsoren/wurttembergische.jpg',
+      imageUrl: '/assets/images/sponsoren/thumbs/wuerttembergische.png',
       url: 'https://www.wuerttembergische.de/versicherungen/david.woll',
       type: 'Bronze'
     },
