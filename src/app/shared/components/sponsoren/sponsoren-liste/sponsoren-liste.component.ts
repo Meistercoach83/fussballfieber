@@ -17,6 +17,12 @@ export class SponsorenListeComponent implements OnInit {
 
   public sponsors: { title: string, imageUrl: string, url?: string, type: string }[] = [
     {
+      title: 'AXA Hauptvertretung Michael Hans',
+      imageUrl: '/assets/images/sponsoren/thumbs/AXA.png',
+      url: 'https://www.axa.de',
+      type: 'Bronze'
+    },
+    {
       title: 'Gries + Co. GmbH CNC Zerspannungstechnik',
       imageUrl: '/assets/images/sponsoren/thumbs/gries.jpg',
       url: 'https://www.dreherei-gries.de',

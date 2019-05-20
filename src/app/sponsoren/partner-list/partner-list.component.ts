@@ -15,6 +15,18 @@ export class PartnerListComponent implements OnInit {
       type: 'Partner'
     },
     {
+      title: 'Lindenapotheke Bliesen',
+      imageUrl: '/assets/images/sponsoren/thumbs/Lindenapotheke.png',
+      url: 'https://www.linden-apotheke-st-wendel.de',
+      type: 'Partner'
+    },
+    {
+      title: 'Glockenapotheke Namborn',
+      imageUrl: '/assets/images/sponsoren/thumbs/Glockenapotheke.png',
+      url: 'https://www.glocken-apotheke-namborn.de',
+      type: 'Partner'
+    },
+    {
       title: 'Stefan Morsch Stiftung',
       imageUrl: '/assets/images/projekte/stefan-morsch-stiftung.png',
       url: 'https://www.stefan-morsch-stiftung.com',
