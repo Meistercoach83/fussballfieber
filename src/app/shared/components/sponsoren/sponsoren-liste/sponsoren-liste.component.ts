@@ -47,6 +47,17 @@ export class SponsorenListeComponent implements OnInit {
       type: 'Hours'
     },
     {
+      title: 'Holzbau Peifer',
+      imageUrl: '/assets/images/sponsoren/thumbs/peifer.jpg',
+      url: 'http://www.holzbau-peifer.de',
+      type: 'Hours'
+    },
+    {
+      title: 'Heizung / Sanitär Kunz GmbH',
+      imageUrl: '/assets/images/sponsoren/kunz.png',
+      type: 'Hours'
+    },
+    {
       title: 'Brennerei Michel',
       imageUrl: '/assets/images/sponsoren/Brennerei-Michel.jpg',
       url: 'http://www.brennerteam.de',

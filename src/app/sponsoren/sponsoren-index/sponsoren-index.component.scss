@@ -1,4 +1,4 @@
-.box-part{
+.box-part {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -10,10 +10,21 @@
   padding-top: 0;
 }
 
- .box-part div {
+.box-part div {
   padding-left: 4rem;
 }
 
 h4 {
   margin: 0;
+}
+
+.supporters {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  -moz-column-count: 4;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 20px;
+  column-count: 4;
+  column-gap: 20px;
 }

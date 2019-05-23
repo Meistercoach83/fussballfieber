@@ -39,6 +39,11 @@
                       alt="{{sponsor.title}}"
                       title="{{sponsor.title}}">
                   </a>
+                  <img *ngIf="!sponsor.url"
+                    class="img img-thumbnail"
+                    [src]="sponsor.imageUrl"
+                    alt="{{sponsor.title}}"
+                    title="{{sponsor.title}}">
                 </div>
               </ng-container>
             </div>
