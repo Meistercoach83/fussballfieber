@@ -8,23 +8,23 @@ export const layoutsRoutes: Routes = [
     children: [
       {
         path: 'startseite',
-        loadChildren: '../../startseite/startseite.module#StartseiteModule'
+        loadChildren: () => import('../../startseite/startseite.module').then(m => m.StartseiteModule)
       },
       {
         path: 'event',
-        loadChildren: '../../event/event.module#EventModule'
+        loadChildren: () => import('../../event/event.module').then(m => m.EventModule)
       },
       {
         path: 'media',
-        loadChildren: '../../media/media.module#MediaModule'
+        loadChildren: () => import('../../media/media.module').then(m => m.MediaModule)
       },
       {
         path: 'spiel',
-        loadChildren: '../../spiel/spiel.module#SpielModule'
+        loadChildren: () => import('../../spiel/spiel.module').then(m => m.SpielModule)
       },
       {
         path: 'sponsoren',
-        loadChildren: '../../sponsoren/sponsoren.module#SponsorenModule'
+        loadChildren: () => import('../../sponsoren/sponsoren.module').then(m => m.SponsorenModule)
       },
       /*
       {

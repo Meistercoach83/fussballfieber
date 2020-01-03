@@ -4,7 +4,7 @@ import { MetaGuard } from '@ngx-meta/core';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: './shared/layouts/layouts.module#LayoutsModule',
+    loadChildren: () => import('./shared/layouts/layouts.module').then(m => m.LayoutsModule),
     canActivateChild: [MetaGuard]
   }
 ];

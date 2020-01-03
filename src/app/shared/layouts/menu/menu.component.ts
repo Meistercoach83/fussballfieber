@@ -24,7 +24,7 @@ export class MenuComponent implements OnInit, AfterViewInit {
   public langList$: Observable<ILang[]>;
   public currentLang: string;
 
-  @ViewChild('navbarResponsive') navbarResponsive: ElementRef;
+  @ViewChild('navbarResponsive', { static: true }) navbarResponsive: ElementRef;
 
   @HostListener('window:scroll', ['$event']) getNavbarCss(): void {
     if (window.pageYOffset > 150) {
