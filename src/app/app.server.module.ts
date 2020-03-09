@@ -4,8 +4,6 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader';
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
-import { InlineStyleComponent } from './inline-style/inline-style.component';
-import { InlineStyleModule } from './inline-style/inline-style.module';
 import { CookieBackendService, CookieService } from 'ngx-cookie';
 
 @NgModule({
@@ -14,10 +12,9 @@ import { CookieBackendService, CookieService } from 'ngx-cookie';
     ServerModule,
     NoopAnimationsModule,
     ServerTransferStateModule,
-    InlineStyleModule,
     ModuleMapLoaderModule
   ],
-  bootstrap: [AppComponent, InlineStyleComponent],
+  bootstrap: [AppComponent],
   providers: [
     { provide: CookieService, useClass: CookieBackendService },
   ],
