@@ -6,17 +6,20 @@ import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/browser/environment';
+import { InlineStyleModule } from './inline-style/inline-style.module';
+import { InlineStyleComponent } from './inline-style/inline-style.component';
 
 export function getRequest(): any {
   return { headers: { cookie: document.cookie } };
 }
 
 @NgModule({
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent, InlineStyleComponent],
   imports: [
     AppModule,
     BrowserTransferStateModule,
     TranslatesBrowserModule,
+    InlineStyleModule,
     environment.production ? ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production }) : []
   ],
   providers: [

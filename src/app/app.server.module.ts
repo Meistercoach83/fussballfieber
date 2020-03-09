@@ -5,6 +5,8 @@ import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader'
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
 import { CookieBackendService, CookieService } from 'ngx-cookie';
+import { InlineStyleComponent } from './inline-style/inline-style.component';
+import { InlineStyleModule } from './inline-style/inline-style.module';
 
 @NgModule({
   imports: [
@@ -12,9 +14,10 @@ import { CookieBackendService, CookieService } from 'ngx-cookie';
     ServerModule,
     NoopAnimationsModule,
     ServerTransferStateModule,
+    InlineStyleModule,
     ModuleMapLoaderModule
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent, InlineStyleComponent],
   providers: [
     { provide: CookieService, useClass: CookieBackendService },
   ],
