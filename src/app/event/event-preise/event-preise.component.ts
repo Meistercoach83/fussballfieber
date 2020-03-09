@@ -33,11 +33,11 @@ export class EventPreiseComponent implements OnInit {
   public foods: { title: string, price: string }[] = [
     {
       title: 'Rostwurst mit halbem Weck',
-      price: '2,50'
+      price: '2,20'
     },
     {
       title: 'Rostwurst mit ganzem Weck',
-      price: '2,80'
+      price: '2,50'
     },
     {
       title: 'Currywurst',
@@ -63,9 +63,17 @@ export class EventPreiseComponent implements OnInit {
 
   public specials: { title: string, day: string, price: string, type: string, sorting: number, cssClass: string }[] = [
     {
+      title: 'Cocktailparty',
+      day: 'Mittwoch, 29.05.19<br />20.00 - 02:00 Uhr',
+      price: 'siehe Aushang',
+      type: 'food',
+      sorting: 0,
+      cssClass: 'bg-food-'
+    },
+    {
       title: 'Rührei mit Speck',
       day: 'Montag, 03.06.19<br />07.00 - 10:00 Uhr',
-      price: '3,50',
+      price: '3,50 €',
       type: 'food',
       sorting: 3,
       cssClass: 'bg-food-'
@@ -73,7 +81,7 @@ export class EventPreiseComponent implements OnInit {
     {
       title: 'Rigatoni mit Schinken-Sahne oder Bolognese-Sauce',
       day: 'Donnerstag, 30.05.19<br />ab 11:00 Uhr',
-      price: '5,00',
+      price: '5,00 €',
       type: 'food',
       sorting: 1,
       cssClass: 'bg-food-'
@@ -81,7 +89,7 @@ export class EventPreiseComponent implements OnInit {
     {
       title: 'Verschiedene Sorten Flammkuchen',
       day: 'Donnerstag, 30.05.19<br />ab 11:00 Uhr',
-      price: '5,00',
+      price: '5,00 €',
       type: 'food',
       sorting: 1,
       cssClass: 'bg-food-'
@@ -89,7 +97,7 @@ export class EventPreiseComponent implements OnInit {
     {
       title: 'Verschiedene Sorten Pizza',
       day: 'Donnerstag, 30.05.19<br />ab 11:00 Uhr',
-      price: '6,00',
+      price: '5,50 €',
       type: 'food',
       sorting: 1,
       cssClass: 'bg-food-'
@@ -97,7 +105,7 @@ export class EventPreiseComponent implements OnInit {
     {
       title: 'Kuchen',
       day: 'Donnerstag, 30.05.19 <br /> Sonntag, 02.06.19<br />ab 14:30 Uhr',
-      price: '1,50',
+      price: '1 € (trocken) <br />1,50 € (Torten)',
       type: 'food',
       sorting: 2,
       cssClass: 'bg-food-'

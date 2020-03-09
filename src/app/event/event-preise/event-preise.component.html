@@ -33,7 +33,7 @@
               [ngClass]="special.cssClass + '' + special.sorting">
             <td class="text-white">{{special.title}}</td>
             <td class="text-white" [innerHTML]="special.day"></td>
-            <td class="text-white">{{special.price}} €</td>
+            <td class="text-white" [innerHTML]="special.price"></td>
           </tr>
           </tbody>
         </table>
