@@ -10,7 +10,6 @@ import { EventFunparkComponent } from './event-funpark/event-funpark.component';
 import { EventPreiseComponent } from './event-preise/event-preise.component';
 import { EventTombolasComponent } from './event-tombolas/event-tombolas.component';
 import { EventLocationComponent } from './event-location/event-location.component';
-import { AgmCoreModule } from '@agm/core';
 import { NgPipesModule } from "ngx-pipes";
 
 @NgModule({
@@ -25,7 +24,6 @@ import { NgPipesModule } from "ngx-pipes";
     EventLocationComponent,
   ],
   imports: [
-    AgmCoreModule,
     CommonModule,
     NgPipesModule,
     RouterModule.forChild(eventRoutes)

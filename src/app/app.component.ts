@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-
 import { MetaService } from '@ngx-meta/core';
-import { TranslatesService } from '@shared/translates';
+import { TranslatesService } from './shared/translates';
 
 @Component({
   selector: 'app-root',

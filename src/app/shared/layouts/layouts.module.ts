@@ -5,12 +5,12 @@ import { TranslateModule } from '@ngx-translate/core';
 
 import { FooterComponent } from './footer/footer.component';
 import { WrapperComponent } from './wrapper/wrapper.component';
-import { CountDownTimerComponent } from '@shared/layouts/count-down-timer/count-down-timer.component';
-import { HeaderComponent } from '@shared/layouts/header/header.component';
-import { MenuComponent } from '@shared/layouts/menu/menu.component';
-import { LoadingIndicatorModule } from '@shared/components/loading-indicator/loading-indicator.module';
-import { layoutsRoutes } from '@shared/layouts/layouts.routing';
-import { MyScrollServiceService } from '@shared/services/my-scroll-service.service';
+import { CountDownTimerComponent } from '../layouts/count-down-timer/count-down-timer.component';
+import { HeaderComponent } from '../layouts/header/header.component';
+import { MenuComponent } from '../layouts/menu/menu.component';
+import { LoadingIndicatorModule } from '../components/loading-indicator/loading-indicator.module';
+import { layoutsRoutes } from '../layouts/layouts.routing';
+import { MyScrollServiceService } from '../services/my-scroll-service.service';
 import { ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({

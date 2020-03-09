@@ -10,7 +10,7 @@ import { MetaService } from '@ngx-meta/core';
 import { Observable, of } from 'rxjs';
 
 import { ILang } from './translates.interface';
-import { UniversalStorage } from '@shared/storage/universal.storage';
+import { UniversalStorage } from '../../shared/storage/universal.storage';
 
 const LANG_LIST: ILang[] = [
   { code: 'de', name: 'Deutsch', culture: 'de-DE' },

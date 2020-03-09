@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
 import { REQUEST } from '@nguniversal/express-engine/tokens';
-import { TranslatesBrowserModule } from '@shared/translates/translates-browser';
+import { TranslatesBrowserModule } from './shared/translates/translates-browser';
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
 import { ServiceWorkerModule } from '@angular/service-worker';

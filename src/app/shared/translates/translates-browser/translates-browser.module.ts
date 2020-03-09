@@ -1,13 +1,9 @@
+import { CommonMissingTranslationHandler, TranslatesService } from './../translates.service';
 import { NgModule } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { TransferState } from '@angular/platform-browser';
 
 import { TranslateLoader, TranslateModule, MissingTranslationHandler } from '@ngx-translate/core';
-
-import {
-  TranslatesService,
-  CommonMissingTranslationHandler,
-} from '@shared/translates/translates.service';
 
 import { TranslatesBrowserLoaderService } from './translates-browser-loader.service';
 

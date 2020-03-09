@@ -1,10 +1,9 @@
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
-// import { MyScrollServiceService } from '../../shared/services/my-scroll-service.service';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { ActivatedRoute, NavigationEnd, NavigationStart, Router } from '@angular/router';
 import { Observable } from 'rxjs/index';
-import { ILang, TranslatesService } from '@shared/translates';
-import { MyScrollServiceService } from '@shared/services/my-scroll-service.service';
+import { ILang, TranslatesService } from '../../translates';
+import { MyScrollServiceService } from '../../services/my-scroll-service.service';
 
 @Component({
   selector: 'app-menu',
