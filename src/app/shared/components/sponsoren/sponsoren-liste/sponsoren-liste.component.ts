@@ -35,6 +35,12 @@ export class SponsorenListeComponent implements OnInit {
       type: 'Bronze'
     },
     {
+      title: 'Ursapharm',
+      imageUrl: '/assets/images/sponsoren/ursa.png',
+      url: 'https://www.ursapharm.de',
+      type: 'Silver'
+    },
+    {
       title: 'Radio Schlagerparadies',
       imageUrl: '/assets/images/sponsoren/radioschlagerparadies.png',
       url: 'https://www.schlagerparadies.de',

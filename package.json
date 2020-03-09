@@ -55,6 +55,7 @@
     "ngx-pipes": "^2.7.3",
     "protractor": "^5.4.3",
     "rxjs": "^6.5.4",
+    "tslint": "^6.0.0",
     "zone.js": "^0.10.2"
   },
   "devDependencies": {
