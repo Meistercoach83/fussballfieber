@@ -6,7 +6,6 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader';
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
-import { CookieBackendService, CookieService } from 'ngx-cookie';
 
 @NgModule({
   imports: [
@@ -18,9 +17,6 @@ import { CookieBackendService, CookieService } from 'ngx-cookie';
     ModuleMapLoaderModule
   ],
   bootstrap: [AppComponent, InlineStyleComponent],
-  providers: [
-    { provide: CookieService, useClass: CookieBackendService },
-  ],
 })
 export class AppServerModule {
 }
