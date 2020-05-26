@@ -1,12 +1,15 @@
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MetaGuard } from '@ngx-meta/core';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./shared/layouts/layouts.module').then(m => m.LayoutsModule),
-    canActivateChild: [MetaGuard]
+    loadChildren: () => import('./shared/layouts/layouts.module').then(m => m.LayoutsModule)
   }
 ];
 
-export const AppRoutes = RouterModule.forRoot(routes, { initialNavigation: 'enabled' });
+@NgModule({
+  imports: [ RouterModule.forRoot(routes) ],
+  exports: [ RouterModule ]
+})
+export class AppRoutingModule {}
