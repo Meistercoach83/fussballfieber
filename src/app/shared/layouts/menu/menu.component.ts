@@ -1,8 +1,6 @@
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { ActivatedRoute, NavigationEnd, NavigationStart, Router } from '@angular/router';
-import { Observable } from 'rxjs/index';
-import { ILang, TranslatesService } from '../../translates';
 import { MyScrollServiceService } from '../../services/my-scroll-service.service';
 
 @Component({
@@ -13,15 +11,10 @@ import { MyScrollServiceService } from '../../services/my-scroll-service.service
 export class MenuComponent implements OnInit, AfterViewInit {
 
   public imageSize;
-
   public imageClass = '';
-
   public isHomePage: boolean;
   public isTopOfPage = true;
   public showLogo: boolean;
-
-  public langList$: Observable<ILang[]>;
-  public currentLang: string;
 
   @ViewChild('navbarResponsive', { static: true }) navbarResponsive: ElementRef;
 
@@ -62,18 +55,14 @@ export class MenuComponent implements OnInit, AfterViewInit {
     });
   }
 
-  constructor(private route: ActivatedRoute,
-              private router: Router,
-              private elementRef: ElementRef,
-              private _translatesService: TranslatesService,
-              public breakpointObserver: BreakpointObserver,
-              public myScrollService: MyScrollServiceService) {
+  constructor(
+    private router: Router,
+    public breakpointObserver: BreakpointObserver,
+    public myScrollService: MyScrollServiceService) {
   }
 
   ngOnInit() {
     this.isHomePage = this.isHomeUrl(this.router.url);
-    this.langList$ = this._translatesService.getLangList();
-    this.currentLang = this._translatesService.getCurrentLang();
     this.getImageClass();
   }
 
@@ -88,18 +77,13 @@ export class MenuComponent implements OnInit, AfterViewInit {
       if (event instanceof NavigationStart) {
       } else if (event instanceof NavigationEnd) {
         this.isHomePage = this.isHomeUrl(event.url);
-        this.isHomePage ? this.myScrollService.scrollTo({target: 'top'}) : this.myScrollService.scrollTo({target: 'content'});
+        this.isHomePage ? this.myScrollService.scrollTo({ target: 'top' }) : this.myScrollService.scrollTo({ target: 'content' });
       }
     });
   }
 
   isHomeUrl(url: string): boolean {
     return url === '/' || url === '/startseite';
-  }
-
-  public changeLang(lang: string): void {
-    this._translatesService.changeLang(lang);
-    this.currentLang = lang;
   }
 
 }

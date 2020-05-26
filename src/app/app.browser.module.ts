@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
 import { REQUEST } from '@nguniversal/express-engine/tokens';
-import { TranslatesBrowserModule } from './shared/translates/translates-browser';
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -18,7 +17,6 @@ export function getRequest(): any {
   imports: [
     AppModule,
     BrowserTransferStateModule,
-    TranslatesBrowserModule,
     InlineStyleModule,
     environment.production ? ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production }) : []
   ],

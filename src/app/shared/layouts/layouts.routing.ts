@@ -26,11 +26,6 @@ export const layoutsRoutes: Routes = [
         path: 'sponsoren',
         loadChildren: () => import('../../sponsoren/sponsoren.module').then(m => m.SponsorenModule)
       },
-      /*
-      {
-        path: 'ansprechpartner',
-        loadChildren: '../../ansprechpartner/ansprechpartner.module#AnsprechpartnerModule'
-      },*/
       {
         path: '**',
         redirectTo: 'startseite'

@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
-
 import { FooterComponent } from './footer/footer.component';
 import { WrapperComponent } from './wrapper/wrapper.component';
 import { CountDownTimerComponent } from '../layouts/count-down-timer/count-down-timer.component';
@@ -17,8 +15,7 @@ import { ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
   imports: [
     CommonModule,
     LoadingIndicatorModule,
-    RouterModule.forChild(layoutsRoutes),
-    TranslateModule
+    RouterModule.forChild(layoutsRoutes)
   ],
   declarations: [
     CountDownTimerComponent,

@@ -10,7 +10,6 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MyScrollServiceService } from '../../shared/services/my-scroll-service.service';
-import { TranslateModule } from '@ngx-translate/core';
 import { NgPipesModule } from 'ngx-pipes';
 
 @NgModule({
@@ -27,8 +26,7 @@ import { NgPipesModule } from 'ngx-pipes';
     RouterModule,
     CommonModule,
     NgPipesModule,
-    ReactiveFormsModule,
-    TranslateModule
+    ReactiveFormsModule
   ],
   exports: [
     EventSozialesProjektComponent,
@@ -37,8 +35,7 @@ import { NgPipesModule } from 'ngx-pipes';
     SponsorenAnsprechpartnerComponent,
     SponsorenKontaktFormularComponent,
     SponsorenListeComponent,
-    SponsorenPreiseComponent,
-    TranslateModule
+    SponsorenPreiseComponent
   ],
   providers: [
     MyScrollServiceService

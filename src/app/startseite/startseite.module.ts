@@ -13,7 +13,6 @@ import { StartseiteWeitereInfosComponent } from './startseite-weitere-infos/star
 import { StartseiteNewsletterComponent } from './startseite-newsletter/startseite-newsletter.component';
 import { StartseiteStadionComponent } from './startseite-stadion/startseite-stadion.component';
 import { DeferLoadModule } from '@trademe/ng-defer-load';
-import { TranslateModule } from '@ngx-translate/core';
 import { StartseiteNewsComponent } from './startseite-news/startseite-news.component';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 
@@ -35,8 +34,7 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
     DeferLoadModule,
     PerfectScrollbarModule,
     RouterModule.forChild(startseiteRoutes),
-    SharedComponentsModule,
-    TranslateModule
+    SharedComponentsModule
   ]
 })
 export class StartseiteModule { }

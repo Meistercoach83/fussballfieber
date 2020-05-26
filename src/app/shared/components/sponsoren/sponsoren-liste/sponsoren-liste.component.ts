@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SponsorenListeComponent implements OnInit {
 
-  public packages: string[] = [
-    'Platin',
-    'Gold',
-    'Silver',
-    'Bronze',
-    'Hours'
+  public packages: { type: string, desc: string }[] = [
+    { type: 'Platin', desc: 'Platin' },
+    { type: 'Gold', desc: 'Gold' },
+    { type: 'Silver', desc: 'Silber' },
+    { type: 'Bronze', desc: 'Bronze' },
+    { type: 'Hours', desc: 'Spielstunden-Sponsoren' }
   ];
 
   public sponsors: { title: string, imageUrl: string, url?: string, type: string }[] = [

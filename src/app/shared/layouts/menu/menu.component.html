@@ -11,29 +11,24 @@
       <ul class="mob-ul">
         <li class="nav-item">
           <a class="nav-link" (click)="hideMenu()" routerLink="/startseite"
-             routerLinkActive="router-link-active">{{'pages.home' |
-            translate}}</a>
+             routerLinkActive="router-link-active">Startseite</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" (click)="hideMenu()" routerLink="/spiel"
-             routerLinkActive="router-link-active">{{'pages.match' |
-            translate}}</a>
+             routerLinkActive="router-link-active">Das Spiel</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" (click)="hideMenu()" routerLink="/event"
-             routerLinkActive="router-link-active">{{'pages.program' |
-            translate}}</a>
+             routerLinkActive="router-link-active">Programm</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" (click)="hideMenu()" routerLink="/sponsoren"
-             routerLinkActive="router-link-active">{{'pages.sponsors' |
-            translate}}</a>
+             routerLinkActive="router-link-active">Sponsoren</a>
         </li>
-        <!--<li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" (click)="hideMenu()" routerLink="/media"
-             routerLinkActive="router-link-active">{{'pages.contact' |
-            translate}}</a>
-        </li>-->
+             routerLinkActive="router-link-active">Medien</a>
+        </li>
       </ul>
     </div>
 
@@ -42,55 +37,29 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-link">
           <a routerLink="/startseite" (click)="hideMenu()"
-             routerLinkActive="router-link-active">{{'pages.home' | translate}}</a>
+             routerLinkActive="router-link-active">Startseite</a>
         </li>
         <li class="nav-link">
           <a routerLink="/spiel" (click)="hideMenu()"
-             routerLinkActive="router-link-active">{{'pages.match' | translate}}</a>
+             routerLinkActive="router-link-active">Das Spiel</a>
         </li>
         <li class="nav-link">
           <a routerLink="/event" (click)="hideMenu()"
-             routerLinkActive="router-link-active">{{'pages.program' | translate}}</a>
+             routerLinkActive="router-link-active">Programm</a>
         </li>
         <li class="nav-link">
           <a routerLink="/sponsoren" (click)="hideMenu()"
-             routerLinkActive="router-link-active">{{'pages.sponsors' | translate}}</a>
+             routerLinkActive="router-link-active">Sponsoren</a>
         </li>
         <li class="nav-link">
           <a routerLink="/media" (click)="hideMenu()"
-             routerLinkActive="router-link-active">{{'pages.media' | translate}}</a>
+             routerLinkActive="router-link-active">Medien</a>
         </li>
-        <!--
-        <li class="nav-link dropdown">
-          <a title="{{'chooseLanguage' | translate}}"
-             class="dropdown-toggle"
-             data-toggle="dropdown"
-             role="button" aria-haspopup="true" aria-expanded="false">
-            <img src="/assets/icons/flags/blank.gif" class="flag flag-{{currentLang}}"
-                 alt="{{'languages.' + currentLang | translate}}"/>
-          </a>
-          <div class="dropdown-menu">
-            <ng-container *ngFor="let lang of langList$ | async">
-              <span *ngIf="lang.code !== currentLang"
-                    (click)="changeLang(lang.code)"
-                    class="dropdown-item">
-                <img src="/assets/icons/flags/blank.gif" class="flag flag-{{lang.code}}"
-                     alt="{{'languages.' + lang.code | translate}}"/>
-                {{'languages.' + lang.code | translate}}
-              </span>
-            </ng-container>
-          </div>
-        </li>-->
+       
       </ul>
 
     </div>
 
-    <!--<a *ngIf="showLogo"
-       style="border: 0"
-       class="navbar-brand"
-       href="https://www.fussballfieber2019.de">
-      <img alt="Logo" [ngClass]="imageClass" src="../../../../assets/images/logo.png"/>
-    </a>-->
     <button class="navbar-toggler navbar-toggler-left" style="margin-top: 1rem;"
             type="button"
             data-toggle="collapse"
