@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { EmailService } from '../../services/email.service';
 
 @Component({
   selector: 'app-sponsoren-kontakt-formular',
@@ -18,8 +17,9 @@ export class SponsorenKontaktFormularComponent implements OnInit {
 
   public showSuccess = false;
 
-  constructor(private fb: FormBuilder,
-    private emailService: EmailService) {
+  constructor(
+    private fb: FormBuilder
+  ) {
   }
 
   ngOnInit() {
