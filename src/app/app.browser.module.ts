@@ -1,4 +1,4 @@
-import { environment } from './../environments/server/environment';
+import { environment } from './../environments/environment';
 import { NgModule } from '@angular/core';
 import { BrowserTransferStateModule } from '@angular/platform-browser';
 import { REQUEST } from '@nguniversal/express-engine/tokens';
