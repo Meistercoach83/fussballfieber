@@ -4,7 +4,6 @@ import { InlineStyleModule } from './inline-style/inline-style.module';
 import { NgModule } from '@angular/core';
 import { ServerModule, ServerTransferStateModule } from '@angular/platform-server';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader';
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
 
@@ -14,8 +13,7 @@ import { AppModule } from './app.module';
     ServerModule,
     NoopAnimationsModule,
     ServerTransferStateModule,
-    InlineStyleModule,
-    ModuleMapLoaderModule
+    InlineStyleModule
   ],
   bootstrap: [AppComponent, InlineStyleComponent],
   providers: [
