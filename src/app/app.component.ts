@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,9 @@ import { Meta } from '@angular/platform-browser';
 export class AppComponent {
 
   constructor(
-    private meta: Meta
+    private meta: Meta,
+    private title: Title
   ) {
+    this.title.setTitle('Fußballfieber 2019 - Der 168 Stunden Weltrekord');
   }
 }
