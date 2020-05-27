@@ -16,20 +16,20 @@ import { exit } from 'process';
 require('source-map-support').install();
 
 // for tests
-const test = process.env['TEST'] === 'true';
+const test = process.env.TEST === 'true';
 
 // ssr DOM
 const domino = require('domino');
 const fs = require('fs');
 const path = require('path');
 // index from browser build!
-const template = fs.readFileSync(path.join('.', 'dist', 'index.html')).toString();
+const template = fs.readFileSync(path.join('.', 'dist/browser', 'index.html')).toString();
 // for mock global window by domino
 const win = domino.createWindow(template);
 // from server build
-const files = fs.readdirSync(`${process.cwd()}/dist-server`);
+const files = fs.readdirSync(`${process.cwd()}/dist/server`);
 // mock
-global['window'] = win;
+global.window = win;
 // not implemented property and functions
 Object.defineProperty(win.document.body.style, 'transform', {
   value: () => {
@@ -40,11 +40,11 @@ Object.defineProperty(win.document.body.style, 'transform', {
   },
 });
 // mock documnet
-global['document'] = win.document;
+global.document = win.document;
 // othres mock
-global['CSS'] = null;
+global.CSS = null;
 // global['XMLHttpRequest'] = require('xmlhttprequest').XMLHttpRequest;
-global['Prism'] = null;
+(global as any).Prism  = null;
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app() {
@@ -122,7 +122,7 @@ export function app() {
 
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
-    global['navigator'] = req['headers']['user-agent'] as any;
+    global.navigator = req.headers['user-agent'] as any;
     const http =
       req.headers['x-forwarded-proto'] === undefined ? 'http' : req.headers['x-forwarded-proto'];
 
