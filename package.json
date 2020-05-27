@@ -31,6 +31,7 @@
     "@angular/service-worker": "^9.1.4",
     "@gorniv/ngx-transfer-http": "^2.2.9",
     "@nguniversal/express-engine": "^9.0.1",
+    "@nguniversal/module-map-ngfactory-loader": "^8.2.6",
     "@ngx-gallery/core": "^5.0.0-beta.0",
     "@ngx-gallery/gallerize": "^5.0.0-beta.0",
     "@ngx-gallery/lightbox": "^5.0.0-beta.0",
