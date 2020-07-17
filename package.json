@@ -49,6 +49,7 @@
     "ngx-perfect-scrollbar": "^9.0.0",
     "ngx-pipes": "^2.7.3",
     "rxjs": "~6.6.0",
+    "typeface-heebo": "0.0.72",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
