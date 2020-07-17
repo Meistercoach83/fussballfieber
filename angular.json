@@ -31,7 +31,6 @@
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "node_modules/owl.carousel/dist/assets/owl.carousel.css",
               "node_modules/owl.carousel/dist/assets/owl.theme.default.css",
-              "src/assets/params/styles/heebo.font.scss",
               "src/assets/params/styles/app.scss",
               "src/assets/params/styles/typography.scss",
               "src/assets/params/styles/main.scss",
