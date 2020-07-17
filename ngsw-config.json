@@ -1,9 +1,6 @@
 {
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
   "index": "/index.html",
-  "appData": {
-    "name": "Fußballfieber 2019",
-    "description": "Der 168 Stunden Weltrekord von Winterbach"
-  },
   "assetGroups": [
     {
       "name": "app",
@@ -12,28 +9,19 @@
         "files": [
           "/favicon.ico",
           "/index.html",
+          "/manifest.webmanifest",
           "/*.css",
           "/*.js"
         ]
       }
-    },
-    {
+    }, {
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
       "resources": {
         "files": [
-          "/assets/**"
-        ]
-      }
-    },
-    {
-      "name": "fonts",
-      "resources": {
-        "urls": [
-          "https://fonts.googleapis.com/**",
-          "https://fonts.gstatic.com/**",
-          "https://cdn.ampproject.org/**"
+          "/assets/**",
+          "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ]
       }
     }

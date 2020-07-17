@@ -1,7 +1,7 @@
-import { enableProdMode, MissingTranslationStrategy } from '@angular/core';
+import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { AppModule } from './app/app.module';
+import { AppBrowserModule } from './app/app.browser.module';
 import { environment } from './environments/environment';
 
 if (environment.production) {
@@ -9,11 +9,6 @@ if (environment.production) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  platformBrowserDynamic().bootstrapModule(AppModule, {
-    missingTranslation: MissingTranslationStrategy.Error
-  }).then(() => {
-    if ('serviceWorker' in navigator && environment.production) {
-      navigator.serviceWorker.register('./ngsw-worker.js');
-    }
-  }).catch(err => console.log(err));
+  platformBrowserDynamic().bootstrapModule(AppBrowserModule)
+    .catch(err => console.log(err));
 });

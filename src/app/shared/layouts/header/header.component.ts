@@ -13,52 +13,52 @@ export class HeaderComponent implements OnInit {
   sponsors = [
     {
       title: 'Volkswagen Autohaus Schmidt',
-      image: '/assets/images/sponsoren/thumbs/Schmidt_GmbH_Logo.png',
+      image: '/assets/params/images/sponsoren/thumbs/Schmidt_GmbH_Logo.png',
       url: 'https://www.autohaus-schmidt-wnd.de'
     },
     {
       title: 'Bosch Car Service + Reisemobile Dörr',
-      image: '/assets/images/sponsoren/thumbs/Logo_Reisemobile_Doerr_Blau.jpg',
+      image: '/assets/params/images/sponsoren/thumbs/Logo_Reisemobile_Doerr_Blau.jpg',
       url: 'http://reisemobile-doerr.de'
     },
     {
       title: 'Peter Groß Bau',
-      image: '/assets/images/sponsoren/thumbs/PG_Logo_rgb_weiss-02.png',
+      image: '/assets/params/images/sponsoren/thumbs/PG_Logo_rgb_weiss-02.png',
       url: 'https://gross-bau.de'
     },
     {
       title: 'Bechtle GmbH',
-      image: '/assets/images/sponsoren/thumbs/bechtle_logo_rgb.png',
+      image: '/assets/params/images/sponsoren/thumbs/bechtle_logo_rgb.png',
       url: 'https://www.bechtle.com'
     },
     {
       title: 'Treuhand Saar',
-      image: '/assets/images/sponsoren/thumbs/THS.gif',
+      image: '/assets/params/images/sponsoren/thumbs/THS.gif',
       url: 'https://www.treuhand-saar.de'
     },
     {
       title: 'Schröder Fleischwaren',
-      image: '/assets/images/sponsoren/thumbs/Schroeder.png',
+      image: '/assets/params/images/sponsoren/thumbs/Schroeder.png',
       url: 'http://www.schroeder-fleischwaren.de'
     },
     {
       title: 'Volkswagen',
-      image: '/assets/images/sponsoren/thumbs/volkswagen-logo.png',
+      image: '/assets/params/images/sponsoren/thumbs/volkswagen-logo.png',
       url: 'https://www.volkswagen.de'
     },
     {
       title: 'Axis Communications AB',
-      image: '/assets/images/sponsoren/thumbs/axis_logo_color.jpg',
+      image: '/assets/params/images/sponsoren/thumbs/axis_logo_color.jpg',
       url: 'https://www.axis.com'
     },
     {
       title: 'Imperial Sportsbet',
-      image: '/assets/images/sponsoren/thumbs/Imperial_Logo_Web_S.png',
+      image: '/assets/params/images/sponsoren/thumbs/Imperial_Logo_Web_S.png',
       url: 'https://imperial-sportsbet.com'
     } /*,
     {
       title: 'Layenberger',
-      image: '/assets/images/sponsoren/thumbs/layenberger_logo.png',
+      image: '/assets/params/images/sponsoren/thumbs/layenberger_logo.png',
       url: 'https://www.layenberger.com'
     }, */
   ];

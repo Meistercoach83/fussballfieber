@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "fieber": {
+    "angular-starter": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,31 +13,33 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/browser",
+            "outputPath": "dist/angular-starter/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "aot": true,
             "assets": [
-              "src/assets",
               "src/favicon.ico",
-              "src/robots.txt",
-              "src/manifest.json"
+              "src/assets",
+              "src/manifest.webmanifest",
+              "src/sitemap.xml",
+              "src/robots.txt"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "node_modules/owl.carousel/dist/assets/owl.carousel.css",
               "node_modules/owl.carousel/dist/assets/owl.theme.default.css",
-              "src/styles/heebo.font.scss",
-              "src/styles/app.scss",
-              "src/styles/typography.scss",
-              "src/styles/main.scss",
-              "src/styles/grid.scss"
+              "src/assets/params/styles/heebo.font.scss",
+              "src/assets/params/styles/app.scss",
+              "src/assets/params/styles/typography.scss",
+              "src/assets/params/styles/main.scss",
+              "src/assets/params/styles/grid.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/owl.carousel/dist/owl.carousel.js"
             ]
           },
@@ -54,7 +56,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -66,28 +67,30 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "12kb",
-                  "maximumError": "20kb"
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "ngsw-config.json"
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "fieber:build"
+            "browserTarget": "angular-starter:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "fieber:build:production"
+              "browserTarget": "angular-starter:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "fieber:build"
+            "browserTarget": "angular-starter:build"
           }
         },
         "test": {
@@ -98,27 +101,14 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/assets",
               "src/favicon.ico",
-              "src/robots.txt",
-              "src/manifest.json"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/font-awesome/css/font-awesome.css",
-              "node_modules/owl.carousel/dist/assets/owl.carousel.css",
-              "node_modules/owl.carousel/dist/assets/owl.theme.default.css",
-              "src/styles/heebo.font.scss",
-              "src/styles/app.scss",
-              "src/styles/typography.scss",
-              "src/styles/main.scss",
-              "src/styles/grid.scss"
+              "src/styles.css"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/owl.carousel/dist/owl.carousel.js"
-            ]
+            "scripts": []
           }
         },
         "lint": {
@@ -127,7 +117,8 @@
             "tsConfig": [
               "tsconfig.app.json",
               "tsconfig.spec.json",
-              "e2e/tsconfig.json"
+              "e2e/tsconfig.json",
+              "tsconfig.server.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -138,18 +129,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "fieber:serve"
+            "devServerTarget": "angular-starter:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "fieber:serve:production"
+              "devServerTarget": "angular-starter:serve:production"
             }
           }
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/server",
+            "outputPath": "dist/angular-starter/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -170,21 +161,21 @@
         "serve-ssr": {
           "builder": "@nguniversal/builders:ssr-dev-server",
           "options": {
-            "browserTarget": "fieber:build",
-            "serverTarget": "fieber:server"
+            "browserTarget": "angular-starter:build",
+            "serverTarget": "angular-starter:server"
           },
           "configurations": {
             "production": {
-              "browserTarget": "fieber:build:production",
-              "serverTarget": "fieber:server:production"
+              "browserTarget": "angular-starter:build:production",
+              "serverTarget": "angular-starter:server:production"
             }
           }
         },
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "fieber:build:production",
-            "serverTarget": "fieber:server:production",
+            "browserTarget": "angular-starter:build:production",
+            "serverTarget": "angular-starter:server:production",
             "routes": [
               "/"
             ]
@@ -196,5 +187,8 @@
       }
     }
   },
-  "defaultProject": "fieber"
+  "defaultProject": "angular-starter",
+  "cli": {
+    "analytics": "bf4224b1-8e2c-4591-94a9-5b372dd77e43"
+  }
 }

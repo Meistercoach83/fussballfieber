@@ -11,7 +11,7 @@ import { existsSync } from 'fs';
 // The Express app is exported so that it can be used by serverless Functions.
 export function app() {
   const server = express();
-  const distFolder = join(process.cwd(), 'dist/browser');
+  const distFolder = join(process.cwd(), 'dist/angular-starter/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
@@ -22,11 +22,8 @@ export function app() {
   server.set('view engine', 'html');
   server.set('views', distFolder);
 
-  // TODO: implement data requests securely
-  server.get('/api/**', (req, res) => {
-    res.status(404).send('data requests are not yet supported');
-  });
-
+  // Example Express Rest API endpoints
+  // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
   server.get('*.*', express.static(distFolder, {
     maxAge: '1y'
@@ -40,7 +37,7 @@ export function app() {
   return server;
 }
 
-function run() {
+function run(): void {
   const port = process.env.PORT || 4000;
 
   // Start up the Node server

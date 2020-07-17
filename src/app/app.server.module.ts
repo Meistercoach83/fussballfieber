@@ -1,24 +1,17 @@
-import { CookieBackendService, CookieService } from '@gorniv/ngx-universal';
-import { InlineStyleComponent } from './inline-style/inline-style.component';
-import { InlineStyleModule } from './inline-style/inline-style.module';
 import { NgModule } from '@angular/core';
-import { ServerModule, ServerTransferStateModule } from '@angular/platform-server';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ServerModule, ServerTransferStateModule } from '@angular/platform-server';
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
+
 
 @NgModule({
   imports: [
     AppModule,
     ServerModule,
     NoopAnimationsModule,
-    ServerTransferStateModule,
-    InlineStyleModule
+    ServerTransferStateModule
   ],
-  bootstrap: [AppComponent, InlineStyleComponent],
-  providers: [
-    { provide: CookieService, useClass: CookieBackendService }
-  ]
+  bootstrap: [AppComponent],
 })
-export class AppServerModule {
-}
+export class AppServerModule { }

@@ -22,7 +22,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Maurice',
       lastName: 'Flickinger',
-      image: '', // /assets/images/spieler/sfw/maurice.jpg
+      image: '', // /assets/params/images/spieler/sfw/maurice.jpg
       age: 25,
       club: '?',
       position: '?',
@@ -31,7 +31,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Annika',
       lastName: 'Müller',
-      image: '/assets/images/spieler/sfw/annika.jpg',
+      image: '/assets/params/images/spieler/sfw/annika.jpg',
       age: 28,
       club: 'SF Winterbach',
       position: 'Zentrales defensives Mittelfeld',
@@ -40,7 +40,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Carsten',
       lastName: 'Rauber',
-      image: '/assets/images/spieler/sfw/carsten.jpg',
+      image: '/assets/params/images/spieler/sfw/carsten.jpg',
       age: 22,
       club: 'SF Winterbach',
       position: '',
@@ -49,7 +49,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Christian',
       lastName: 'Gelzleichter',
-      image: '/assets/images/spieler/sfw/gelzi.jpg',
+      image: '/assets/params/images/spieler/sfw/gelzi.jpg',
       age: 21,
       club: 'SF Winterbach',
       position: 'Rechter Flügel',
@@ -58,7 +58,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Christian',
       lastName: 'Spengler',
-      image: '/assets/images/spieler/sfw/chris.jpg',
+      image: '/assets/params/images/spieler/sfw/chris.jpg',
       age: 31,
       club: 'SF Winterbach',
       position: 'Zentrales defensives Mittelfeld',
@@ -67,7 +67,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Dillon',
       lastName: 'Schug',
-      image: '/assets/images/spieler/sfw/dillon.jpg',
+      image: '/assets/params/images/spieler/sfw/dillon.jpg',
       age: 24,
       club: 'SF Winterbach',
       position: '',
@@ -76,7 +76,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Julian',
       lastName: 'Baier',
-      image: '/assets/images/spieler/sfw/baier.jpg',
+      image: '/assets/params/images/spieler/sfw/baier.jpg',
       age: 21,
       club: 'SF Winterbach',
       position: 'Innenverteidiger / Rechter Verteidiger',
@@ -85,7 +85,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Julian',
       lastName: 'Hoffmann',
-      image: '/assets/images/spieler/sfw/julian.jpg',
+      image: '/assets/params/images/spieler/sfw/julian.jpg',
       age: 17,
       club: 'JFG Marpingen',
       position: 'Torwart',
@@ -94,7 +94,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Kevin',
       lastName: 'Spengler',
-      image: '/assets/images/spieler/sfw/kevin.jpg',
+      image: '/assets/params/images/spieler/sfw/kevin.jpg',
       age: 25,
       club: 'SF Winterbach',
       position: '',
@@ -103,7 +103,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Lukas',
       lastName: 'Krämer',
-      image: '/assets/images/spieler/sfw/lukas.jpg',
+      image: '/assets/params/images/spieler/sfw/lukas.jpg',
       age: 23,
       club: 'SF Winterbach',
       position: 'Linker Verteidiger',
@@ -112,7 +112,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Manuel',
       lastName: 'Hahn',
-      image: '/assets/images/spieler/sfw/manu.jpg',
+      image: '/assets/params/images/spieler/sfw/manu.jpg',
       age: 23,
       club: 'SF Winterbach',
       position: 'Rechter Verteidiger',
@@ -121,7 +121,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Max',
       lastName: 'Hoffmann',
-      image: '/assets/images/spieler/sfw/max.jpg',
+      image: '/assets/params/images/spieler/sfw/max.jpg',
       age: 17,
       club: 'JFG Marpingen',
       position: 'Zentrales offensives Mittelfeld',
@@ -130,7 +130,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Niclas',
       lastName: 'Hanke',
-      image: '/assets/images/spieler/sfw/niclas.jpg',
+      image: '/assets/params/images/spieler/sfw/niclas.jpg',
       age: 29,
       club: 'vereinslos',
       position: 'Zentrales offensives Mittelfeld',
@@ -139,7 +139,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Ronny',
       lastName: 'Hassel',
-      image: '/assets/images/spieler/sfw/ronny.jpg',
+      image: '/assets/params/images/spieler/sfw/ronny.jpg',
       age: 37,
       club: 'SF Winterbach',
       position: 'Innenverteidiger',
@@ -148,7 +148,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Simon',
       lastName: 'Backes',
-      image: '/assets/images/spieler/sfw/simon.jpg',
+      image: '/assets/params/images/spieler/sfw/simon.jpg',
       age: 21,
       club: 'SF Winterbach',
       position: 'Rechter Verteidiger',
@@ -157,7 +157,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Thomas',
       lastName: 'Weber',
-      image: '/assets/images/spieler/sfw/thomas.jpg',
+      image: '/assets/params/images/spieler/sfw/thomas.jpg',
       age: 28,
       club: 'Fortuna Niederaltdorf',
       position: 'Rechter Verteidiger',
@@ -166,7 +166,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Tobias',
       lastName: 'Jennewein',
-      image: '/assets/images/spieler/sfw/tobi.jpg',
+      image: '/assets/params/images/spieler/sfw/tobi.jpg',
       age: 22,
       club: 'SF Winterbach',
       position: '',
@@ -175,7 +175,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Jannik',
       lastName: 'Nüsslein',
-      image: '/assets/images/spieler/sfw/jannik.jpg',
+      image: '/assets/params/images/spieler/sfw/jannik.jpg',
       age: 27,
       club: 'SF Winterbach',
       position: 'Innenverteidiger',
@@ -187,7 +187,7 @@ export class SpielerComponent implements OnInit {
     {
       firstName: 'Sven',
       lastName: 'Rothmeier',
-      image: '/assets/images/spieler/tgifec/sven.jpg',
+      image: '/assets/params/images/spieler/tgifec/sven.jpg',
       age: 38,
       club: 'RW Pirmasens',
       position: 'TW',
@@ -195,7 +195,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Benjamin',
       lastName: 'Gruner',
-      image: '/assets/images/spieler/tgifec/benjamin_gruner.jpg',
+      image: '/assets/params/images/spieler/tgifec/benjamin_gruner.jpg',
       age: 33,
       club: 'FV Kusel',
       position: 'LV/LM',
@@ -203,7 +203,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Kevin',
       lastName: 'Eicher',
-      image: '/assets/images/spieler/tgifec/kevin.jpg',
+      image: '/assets/params/images/spieler/tgifec/kevin.jpg',
       age: 30,
       club: 'VfL Wallhalben',
       position: 'IV/RV',
@@ -211,7 +211,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Erik',
       lastName: 'Börgers',
-      image: '/assets/images/spieler/tgifec/erik.jpg',
+      image: '/assets/params/images/spieler/tgifec/erik.jpg',
       age: 28,
       club: 'SV Haldern',
       position: 'RV/RM',
@@ -219,7 +219,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Mike',
       lastName: 'Karll',
-      image: '/assets/images/spieler/tgifec/mike.jpg',
+      image: '/assets/params/images/spieler/tgifec/mike.jpg',
       age: 34,
       club: 'VfL Wallhalben',
       position: 'IV/RV/LV',
@@ -227,7 +227,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Thore',
       lastName: 'Marhöfer',
-      image: '/assets/images/spieler/tgifec/thore.jpg',
+      image: '/assets/params/images/spieler/tgifec/thore.jpg',
       age: 29,
       club: 'VfL Wallhalben',
       position: 'IV/DM',
@@ -235,7 +235,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Benjamin',
       lastName: 'Janek',
-      image: '/assets/images/spieler/tgifec/benjamin_janek.jpg',
+      image: '/assets/params/images/spieler/tgifec/benjamin_janek.jpg',
       age: 26,
       club: 'FV Kindsbach',
       position: 'ZM/RA',
@@ -243,7 +243,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Lasse',
       lastName: 'Thomas',
-      image: '/assets/images/spieler/tgifec/lasse.jpg',
+      image: '/assets/params/images/spieler/tgifec/lasse.jpg',
       age: 24,
       club: 'SV Kirchheim',
       position: 'RA/LA/OM/MS',
@@ -251,7 +251,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Tobias',
       lastName: 'Utzig',
-      image: '/assets/images/spieler/tgifec/tobias_utzig.jpg',
+      image: '/assets/params/images/spieler/tgifec/tobias_utzig.jpg',
       age: 27,
       club: 'VfL Wallhalben',
       position: 'DM/ZM/OM',
@@ -259,7 +259,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Manuel',
       lastName: 'Schütt',
-      image: '/assets/images/spieler/tgifec/manuel.jpg',
+      image: '/assets/params/images/spieler/tgifec/manuel.jpg',
       age: 32,
       club: 'VfL Wallhalben',
       position: 'TW/ZM',
@@ -267,7 +267,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Andre',
       lastName: 'Busch',
-      image: '/assets/images/spieler/tgifec/andre.jpg',
+      image: '/assets/params/images/spieler/tgifec/andre.jpg',
       age: 32,
       club: 'FC Mittelbrunn',
       position: 'TW/ZM',
@@ -275,7 +275,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Julien',
       lastName: 'Lehmann',
-      image: '/assets/images/spieler/tgifec/julien.jpg',
+      image: '/assets/params/images/spieler/tgifec/julien.jpg',
       age: 27,
       club: 'VfL Wallhalben',
       position: 'LA/RA/ZM',
@@ -283,7 +283,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Dirk',
       lastName: 'Stiwitz',
-      image: '/assets/images/spieler/tgifec/dirk.jpg',
+      image: '/assets/params/images/spieler/tgifec/dirk.jpg',
       age: 48,
       club: 'VfL Wallhalben',
       position: 'DM/RV',
@@ -291,7 +291,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Corey',
       lastName: 'Caperton',
-      image: '/assets/images/spieler/tgifec/corey.jpg',
+      image: '/assets/params/images/spieler/tgifec/corey.jpg',
       age: 30,
       club: 'VfL Wallhalben',
       position: 'RA/MS',
@@ -299,7 +299,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Nico',
       lastName: 'Deckarm',
-      image: '/assets/images/spieler/tgifec/nico.jpg',
+      image: '/assets/params/images/spieler/tgifec/nico.jpg',
       age: 19,
       club: 'SV Rohrbach',
       position: 'ZM',
@@ -307,7 +307,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Thorsten',
       lastName: 'Hilse',
-      image: '/assets/images/spieler/tgifec/thorsten.jpg',
+      image: '/assets/params/images/spieler/tgifec/thorsten.jpg',
       age: 32,
       club: 'VfL Wallhalben',
       position: 'DM/ZM',
@@ -315,7 +315,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Waldemar',
       lastName: 'Röhrich',
-      image: '/assets/images/spieler/tgifec/waldemar.jpg',
+      image: '/assets/params/images/spieler/tgifec/waldemar.jpg',
       age: 27,
       club: 'VfL Wallhalben',
       position: 'RA/LA/MS',
@@ -323,7 +323,7 @@ export class SpielerComponent implements OnInit {
     }, {
       firstName: 'Tobias',
       lastName: 'Schuler',
-      image: '/assets/images/spieler/tgifec/tobias_schuler.jpg',
+      image: '/assets/params/images/spieler/tgifec/tobias_schuler.jpg',
       age: 22,
       club: 'FV Kindsbach',
       position: 'ZM/OM',

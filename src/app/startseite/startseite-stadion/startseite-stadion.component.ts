@@ -9,23 +9,23 @@ export class StartseiteStadionComponent implements OnInit {
 
   public imageList = [
     {
-      url: '/assets/images/anlage/97.jpg',
+      url: '/assets/params/images/anlage/97.jpg',
       show: false
     },
     {
-      url: '/assets/images/anlage/98.jpg',
+      url: '/assets/params/images/anlage/98.jpg',
       show: false
     },
     {
-      url: '/assets/images/anlage/99.jpg',
+      url: '/assets/params/images/anlage/99.jpg',
       show: false
     },
     {
-      url: '/assets/images/anlage/100.jpg',
+      url: '/assets/params/images/anlage/100.jpg',
       show: false
     },
     {
-      url: '/assets/images/anlage/651.jpg',
+      url: '/assets/params/images/anlage/651.jpg',
       show: false
     },
   ];

@@ -1,7 +1,7 @@
 .our-team {
   transition: all 0.2s linear;
-  background-image: url('../../../assets/images/Stadium.jpeg'); /* fallback for older browsers */
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 80%), url('../../../assets/images/Stadium.jpeg');
+  background-image: url('../../../assets/params/images/Stadium.jpeg'); /* fallback for older browsers */
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 80%), url('../../../assets/params/images/Stadium.jpeg');
   background-size: cover;
 }
 
