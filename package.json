@@ -9,10 +9,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run sfw:serve-ssr",
+    "dev:ssr": "ng run fussballfieber:serve-ssr",
     "serve:ssr": "node dist/server/main.js",
-    "build:ssr": "ng build --prod && ng run sfw:server:production",
-    "prerender": "ng run sfw:prerender"
+    "build:ssr": "ng build --prod && ng run fussballfieber:server:production",
+    "prerender": "ng run fussballfieber:prerender"
   },
   "private": true,
   "dependencies": {
