@@ -37,7 +37,7 @@
     "@ngx-gallery/gallerize": "^5.0.0-beta.0",
     "@ngx-gallery/lightbox": "^5.0.0-beta.0",
     "@ngx-meta/core": "^8.0.2",
-    "@ngx-translate/core": "^12.1.2",
+    "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^4.0.0",
     "@nicky-lenaers/ngx-scroll-to": "^3.0.1",
     "@trademe/ng-defer-load": "^8.2.1",
