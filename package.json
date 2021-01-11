@@ -46,7 +46,7 @@
     "express": "^4.15.2",
     "jquery": "^3.4.1",
     "ngx-owl-carousel": "^2.0.7",
-    "ngx-perfect-scrollbar": "^9.0.0",
+    "ngx-perfect-scrollbar": "^10.1.0",
     "ngx-pipes": "^2.7.3",
     "rxjs": "~6.6.0",
     "typeface-heebo": "0.0.72",
